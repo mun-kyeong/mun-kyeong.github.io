@@ -3,4 +3,5 @@ _site
 *.swp
 .sass-cache
 Gemfile.lock
+./0000-00-00-welcome-to-jekyll.markdown.erb
 *~
