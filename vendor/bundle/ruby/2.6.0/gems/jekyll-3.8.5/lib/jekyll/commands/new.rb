@@ -123,7 +123,7 @@ RUBY
         end
 
         def scaffold_path
-          "_posts/0000-00-00-welcome-to-jekyll.markdown.erb"
+          "_posts/2018-01-11-customer-service.md"
         end
 
         # After a new blog has been created, print a success notification and
