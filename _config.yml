@@ -1,10 +1,10 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "munkyeong template, Medium styled, free for bloggers."
+name: "Munkyeong"
+title: "Munkyeong"
+description: "Welcome to Munkyeong-blog."
 logo: "assets/images/logo.png"
 favicon: "assets/images/logo.png"
-baseurl: /mediumish-theme-jekyll
+baseurl: /home
 google_analytics: "UA-46278016-1"
 disqus: "demowebsite"
 mailchimp-list: "https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b"
@@ -13,23 +13,23 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
+  munkyeong:
+    name: munkeyong
+    display_name: munkyeong
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John
+    email: horse6953@naver.com
+    web: https://blog.naver.com/horse6953
+    instargram: https://www.instagram.com/mooo_nk/
+    description: "Pusan ​​National University CSE student. Responsible for computer-related postings or projects."
+  kangoll:
+    name: kangoll
+    display_name: kangoll
     avatar: "assets/images/avatar.png"
     gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    email: horse6953@gmail.com
+    web: https://blog.naver.com/horse6953
+    instargram: https://www.instagram.com/gong_jae_il
+    description: "23 year old college student.I like drawing and traveling."
 
 # Plugins
 plugins:
