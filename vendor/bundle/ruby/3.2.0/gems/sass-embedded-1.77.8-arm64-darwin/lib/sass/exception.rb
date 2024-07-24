@@ -48,7 +48,7 @@ module Sass
           margin: 0 0 1em;
           border-width: 0 0 2px;
           border-bottom-style: solid;
-          font-family: monospace, monospace;
+          font-family: SUITE-Regular, monospace, monospace;
           white-space: pre;
           content: #{Serializer.serialize_quoted_string(content).gsub(/[^[:ascii:]][\h\t ]?/) do |match|
             replacement = "\\#{match.ord.to_s(16)}"
