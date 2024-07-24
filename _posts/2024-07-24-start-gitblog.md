@@ -16,12 +16,12 @@ image: assets/images/thumbnail/gitblog.png
 
 ---
 
-**[ 문제상황 ]**
+[ 문제상황 ]
 
 프로필 페이지를 생성할 때 CSS가 적용되지 않는 문제 발견
 local 환경에서는 적용이 되지 않았으나 배포 환경에서는 CSS가 적용되는 것을 확인
 
-**[ 해결방법 ]**
+[ 해결방법 ]
 
 `default.html` 파일에서
 
