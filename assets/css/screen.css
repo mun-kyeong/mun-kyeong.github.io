@@ -340,9 +340,6 @@ span.post-read-more a:hover {
   line-height: 1.84;
   color: rgba(0, 0, 0, 0.8);
 }
-.article-post-container {
-  max-width: 90% !important;
-}
 
 blockquote {
   border-left: 4px solid #00ab6b;
