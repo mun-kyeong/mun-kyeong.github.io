@@ -6,22 +6,18 @@ categories: [study, etc]
 image: assets/images/thumbnail/gitblog.png
 ---
 
-> 요약
->
+> 요약 <br/>
 > GitBlog를 작성하며 마주했던 문제들과 그 해결 방법을 정리한 글입니다.
+> [ Cashing, font style]
 
 <br/>
 
-### 1. CSS 스타일이 적용되지 않을 때: 캐싱 문제 해결하기
+## 1. CSS 스타일이 적용되지 않을 때: 캐싱 문제 해결하기
 
 ---
 
-[ 문제상황 ]
-
 프로필 페이지를 생성할 때 CSS가 적용되지 않는 문제 발견
 local 환경에서는 적용이 되지 않았으나 배포 환경에서는 CSS가 적용되는 것을 확인
-
-[ 해결방법 ]
 
 `default.html` 파일에서
 
@@ -35,6 +31,38 @@ local 환경에서는 적용이 되지 않았으나 배포 환경에서는 CSS�
 
 위의 코드 부분의 href 주소 코드 뒤에 `?after` 코드 추가
 
-CSS가 적용되지 않았던 이유는 브라우저가 캐싱된 CSS 파일을 사용했기 때문입니다.
+CSS가 적용되지 않았던 이유는 브라우저가 캐싱된 CSS 파일을 사용하고 있었기 때문이였다.
 
-`?after`를 URL 뒤에 추가하는 것은 **브라우저 캐시를 무력화** 하는 역할을 합니다. 이를 통해 브라우저가 캐시된 버전이 아닌 **최신 버전의 CSS 파일을 로드**하도록 강제할 수 있습니다.
+`?after`를 URL 뒤에 추가하는 것은 브라우저 캐시를 무력화 하며, 브라우저가 캐시된 버전이 아닌 **최신 버전의 CSS 파일을 로드**하도록 강제할 수 있다.
+
+<br/><br/>
+
+## 2. Font Style 변경
+
+---
+
+기본 템플릿은 영어에 맞춰져있어서 한글용 새 폰트 스타일을 새로 적용하게 되었다.
+
+[폰트 템플릿 URL - 눈누](https://noonnu.cc/index?order_by=vd&category_style_ids=1&size=25) 해당 사이트에서 원하는 폰트 스타일을 가져온 후 `main.scss` 파일에 아래 코드를 삽입
+
+```scss
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+```
+
+`screen.css` 파일에서 원하는 class의 `font-family` 속성으로 가져온 폰트 스타일을 적용시켜주었다!
+
+```css
+.article-post {
+  /* 수정된 부분 */
+  font-family: "Pretendard-Regular";
+  font-size: 1.1rem;
+  line-height: 1.84;
+  color: rgba(0, 0, 0, 0.8);
+}
+```

@@ -7,13 +7,30 @@ post_class: post-template
 
 <!-- Begin Article
 ================================================== -->
-<div class="container">
+<div class="container article-post-container">
     <div class="row">
 
-        <!-- Post Share -->
-        <div class="col-md-2 pl-0">
+        <!-- Post Share : 추후 추가 예정,, 아직은 필요없을듯? 공유버튼임 -->  
+        <!-- <div class="col-md-2 pl-0">
             {% include share.html %}
-        </div>
+        </div> -->
+
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset toc">
+                <p>[ Content ]</p>
+                <!-- {% if page.comments != false %} 추후 추가 예정,, 아직은 필요없을듯?
+                <div class="sep"></div>
+                <ul>
+                <li>
+                    <a class="small smoothscroll" href="#disqus_thread"></a>
+                </li>
+                </ul>
+                {% endif %} -->
+            </div>
+          </div>
+         
+          
+    
 
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
@@ -179,3 +196,64 @@ https://search.google.com/structured-data/testing-tool/u/0/
 }
 </script>
 {% endif %}
+
+<script>
+    let selectedIndex = 0
+    const tags = document.querySelectorAll("h1,h2");
+    const toc = document.querySelector(".toc");
+  
+    tags.forEach((tag) => {
+        if(["sitetitle", "posttitle"].includes(tag.className)) return;
+        const ul = document.createElement("ul");
+        ul.classList.add("toc-title");
+        ul.textContent = tag.textContent;
+        toc.appendChild(ul);
+    });
+
+    const tocItems = document.querySelectorAll('.toc-title')
+    console.log("tocItems : ", tocItems);
+    tocItems.forEach((item, index) => item.dataset.index = index),
+
+    tags.forEach((tag, index) => tag.dataset.index = index)
+
+    toc.addEventListener('click', e => {
+        if (e.target.matches('.toc-title')) {
+            const index = (e.target.dataset.index)-'0' +2;
+            tags[index].scrollIntoView()
+            tocItems[selectedIndex].classList.remove('selected')
+            selectedIndex = e.target.dataset.index - '0'
+            console.log("selectedIndex : ", selectedIndex);
+            tocItems[selectedIndex].classList.add('selected')
+
+        }   
+    })
+    const observer = new IntersectionObserver(entries => {
+        if(["sitetitle", "posttitle"].includes(entries[0].target.className)) return;
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                tocItems[selectedIndex].classList.remove('selected')
+                selectedIndex = entry.target.dataset.index - '0'-2
+                tocItems[selectedIndex].classList.add('selected')
+            }   
+            else if(entry.boundingClientRect.y > 100 && entry.boundingClientRect.y < -100){ 
+                tocItems[selectedIndex].classList.remove('selected')
+                selectedIndex = entry.target.dataset.index -'0'-2 - 1
+                tocItems[selectedIndex].classList.add('selected')
+            }
+        })
+    })
+    tags.forEach(tag => observer.observe(tag))
+
+    </script>
+
+  <style>
+    .toc-title{
+        cursor: pointer;
+        font-size: small;
+    }
+    .toc-title.selected {
+        background-color: rgba(226, 226, 226, 0.546);
+        color: black;
+        border-left: 3px solid rgb(43,187,126);
+    }   
+  </style>

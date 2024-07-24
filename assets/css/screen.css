@@ -8,7 +8,7 @@ License: https://www.wowthemes.net/freebies-license/
     font-size: 18px;
   } /* Increase the font size on higher resolutions */
   .container {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 .mainheading {
@@ -339,6 +339,9 @@ span.post-read-more a:hover {
   font-size: 1.1rem;
   line-height: 1.84;
   color: rgba(0, 0, 0, 0.8);
+}
+.article-post-container {
+  max-width: 90% !important;
 }
 
 blockquote {
