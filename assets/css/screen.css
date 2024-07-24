@@ -31,8 +31,8 @@ pre {
   border: #e3edf3 1px solid;
   width: 100%;
   padding: 7px;
-  font-family: "SUITE-Regular", "intelone-mono-font-family-regular", monospace,
-    sans-serif;
+  font-family: "Pretendard-Regular", "intelone-mono-font-family-regular",
+    monospace, sans-serif;
   font-size: 0.9rem;
   white-space: pre;
   overflow: auto;
@@ -85,7 +85,7 @@ section.recent-posts {
 
 .article-post ol,
 .article-post ul {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .article-post ol ol,
@@ -310,7 +310,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-  font-family: "SUITE-Regular", Righteous;
+  font-family: "Pretendard-Regular", Righteous;
 }
 
 .mainheading h1.posttitle {
@@ -335,9 +335,9 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-  font-family: "SUITE-Regular";
+  font-family: "Pretendard-Regular";
   font-size: 1.1rem;
-  line-height: 1.84;
+  line-height: 1.2;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -350,7 +350,7 @@ blockquote {
 
 .article-post p,
 .article-post blockquote {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .featured-image {
@@ -690,7 +690,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "SUITE-Regular", -apple-system,
+  font-family: "Pretendard-Regular", -apple-system,
     "intelone-mono-font-family-regular" system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -718,7 +718,7 @@ h6 {
 }
 
 .layout-page .article-post {
-  font-family: "SUITE-Regular", -apple-system, BlinkMacSystemFont,
+  font-family: "Pretendard-Regular", -apple-system, BlinkMacSystemFont,
     "intelone-mono-font-family-regular", "Segoe UI", Roboto, "Helvetica Neue",
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
@@ -884,7 +884,7 @@ iframe {
   line-height: 1;
   padding: 2px 3px;
   width: 150px;
-  font-family: "SUITE-Regular", Arial;
+  font-family: "Pretendard-Regular", Arial;
   text-align: center;
   border-radius: 3px;
   transition: all 0.4s;
