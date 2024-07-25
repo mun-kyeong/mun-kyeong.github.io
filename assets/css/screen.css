@@ -913,6 +913,13 @@ iframe {
   transition: opacity 0.25s;
 }
 
+/* Profile */
 .profile-image {
-  width: 50px !important;
+  width: 150px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
