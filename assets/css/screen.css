@@ -923,3 +923,14 @@ iframe {
   justify-content: center;
   gap: 24px;
 }
+
+/* toc */
+.toc-title {
+  cursor: pointer;
+  font-size: small;
+}
+.toc-title.selected {
+  background-color: rgba(226, 226, 226, 0.546);
+  color: black;
+  border-left: 3px solid rgb(43, 187, 126);
+}

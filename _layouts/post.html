@@ -12,25 +12,25 @@ post_class: post-template
 
         <!-- Post Share : 추후 추가 예정,, 아직은 필요없을듯? 공유버튼임 -->  
         <!-- <div class="col-md-2 pl-0">
-            {% include share.html %}
+            { include share.html }
         </div> -->
 
         <div class="col-md-2 pl-0">
             <div class="share sticky-top sticky-top-offset toc">
                 <p>[ Content ]</p>
-                <!-- {% if page.comments != false %} 추후 추가 예정,, 아직은 필요없을듯?
+                <!-- { if page.comments != false } 추후 추가 예정,, comment 기능이 필요해질때 적용 예정
                 <div class="sep"></div>
                 <ul>
-                <li>
-                    <a class="small smoothscroll" href="#disqus_thread"></a>
-                </li>
+                    <li>
+                        <a class="small smoothscroll" href="#disqus_thread"></a>
+                    </li>
                 </ul>
-                {% endif %} -->
+                { endif } -->
             </div>
           </div>
          
-          
-    
+
+
 
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
@@ -196,21 +196,4 @@ https://search.google.com/structured-data/testing-tool/u/0/
 }
 </script>
 {% endif %}
-
-<script>
-    console.log("sadf   "); 
-</script>
-<script src="https://mun-kyeong.github.io/assets/js/toc.js"></script>
-
-
-  <style>
-    .toc-title{
-        cursor: pointer;
-        font-size: small;
-    }
-    .toc-title.selected {
-        background-color: rgba(226, 226, 226, 0.546);
-        color: black;
-        border-left: 3px solid rgb(43,187,126);
-    }   
-  </style>
+<script src="/assets/js/toc.js"></script>

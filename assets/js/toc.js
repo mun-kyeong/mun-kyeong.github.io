@@ -1,5 +1,4 @@
 async function createToc() {
-  console.log("createToc");
   let selectedIndex = 0;
   const tags = document.querySelectorAll("h1,h2");
   const toc = document.querySelector(".toc");
@@ -49,8 +48,6 @@ async function createToc() {
 }
 
 window.onload = async () => {
-  console.log("OK");
-  if (!document.querySelector("posttitle")) return;
-  console.log("no");
+  if (!document.querySelector(".posttitle")) return;
   await createToc();
 };
