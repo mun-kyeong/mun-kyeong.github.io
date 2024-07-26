@@ -140,10 +140,10 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
+            <a class="prev d-block col-md-6" href="https://mun-kyeong.github.io/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
             {% endif %}
             {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="https://mun-kyeong.github.io/{{page.next.url}}">{{page.next.title}} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>
@@ -198,53 +198,10 @@ https://search.google.com/structured-data/testing-tool/u/0/
 {% endif %}
 
 <script>
-    let selectedIndex = 0
-    const tags = document.querySelectorAll("h1,h2");
-    const toc = document.querySelector(".toc");
-  
-    tags.forEach((tag) => {
-        if(["sitetitle", "posttitle"].includes(tag.className)) return;
-        const ul = document.createElement("ul");
-        ul.classList.add("toc-title");
-        ul.textContent = tag.textContent;
-        toc.appendChild(ul);
-    });
+    console.log("sadf   "); 
+</script>
+<script src="https://mun-kyeong.github.io/assets/js/toc.js"></script>
 
-    const tocItems = document.querySelectorAll('.toc-title')
-    console.log("tocItems : ", tocItems);
-    tocItems.forEach((item, index) => item.dataset.index = index),
-
-    tags.forEach((tag, index) => tag.dataset.index = index)
-
-    toc.addEventListener('click', e => {
-        if (e.target.matches('.toc-title')) {
-            const index = (e.target.dataset.index)-'0' +2;
-            tags[index].scrollIntoView()
-            tocItems[selectedIndex].classList.remove('selected')
-            selectedIndex = e.target.dataset.index - '0'
-            console.log("selectedIndex : ", selectedIndex);
-            tocItems[selectedIndex].classList.add('selected')
-
-        }   
-    })
-    const observer = new IntersectionObserver(entries => {
-        if(["sitetitle", "posttitle"].includes(entries[0].target.className)) return;
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                tocItems[selectedIndex].classList.remove('selected')
-                selectedIndex = entry.target.dataset.index - '0'-2
-                tocItems[selectedIndex].classList.add('selected')
-            }   
-            else if(entry.boundingClientRect.y > 100 && entry.boundingClientRect.y < -100){ 
-                tocItems[selectedIndex].classList.remove('selected')
-                selectedIndex = entry.target.dataset.index -'0'-2 - 1
-                tocItems[selectedIndex].classList.add('selected')
-            }
-        })
-    })
-    tags.forEach(tag => observer.observe(tag))
-
-    </script>
 
   <style>
     .toc-title{
