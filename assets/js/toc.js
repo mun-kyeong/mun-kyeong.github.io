@@ -49,7 +49,8 @@ async function createToc() {
 }
 
 window.onload = async () => {
-  console.log("window.onload");
+  console.log("OK");
   if (!document.querySelector("posttitle")) return;
+  console.log("no");
   await createToc();
 };
