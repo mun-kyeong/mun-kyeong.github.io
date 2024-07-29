@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "gitBlog 작성 시 마주한 문제와 해결 방법 "
+title: "PNU backend-bootcamp 수업 정리"
 author: munkyeong
-categories: [project, etc]
-image: assets/images/thumbnail/gitblog.png
+categories: [study]
+image: assets/images/thumbnail/backend-bootcamp.png
 ---
 
 > 요약 <br/>
@@ -98,18 +98,18 @@ git블로그 환경 세팅을 포함해서 변경된 UI 확인도 할겸 commit 
 알고보니 fork()를 통해 clone한 repository의 경우 commit 기록이 안남는다나,,
 (내 깃블로그의 경우 템플릿 fork()를 통해 생성된 리포지토리에서 작업중이였다)
 
-이왕 깃블로그 쓰는거라면 잔디 기록을 놓치는게 아까워서 누락된 commit 기록을 추가할 수 있는 방법을 찾아보니 [깃허브 잔디 누락 현상](https://kdjun97.github.io/git-github/plant-grass/) 이 블로그의 도움을 많이 받았다.
+이왕 깃블로그 쓰는거라면 잔디 기록을 놓치는게 아까워서 누락된 commit 기록을 추가할 수 있는 방법을 찾아보니 (깃허브 잔디 누락 현상)[https://kdjun97.github.io/git-github/plant-grass/] 이 블로그의 도움을 많이 받았다.
 
 결과만 말하자면
 
 1. 원래 fork() 된 채로 남아있던 `mun-kyeong.github.io` 리포지토리 이름 변경 -> `mun-kyeong.blog` 이라 부르겟음
 2. 잔디 기록을 남길 수 있는 `mun-kyeong.github.io` 리포지토리 생성 (fork()된 리포지토리가 아니라 완전 새로 생성된 리포지토리다)
 3. 로컬에서 아무런 폴서 생성 후 이전의 `munkyeong.blog` clone 받기
-   1. 이때, mac에서 clone 명령어 실행 시에는 인증토큰 문제가 있을 텐데 [Github 연동 사용법 - Mac OS](https://wg-cy.tistory.com/343) 여길 참고해도 되고 나같은 경우는
+   1. 이때, mac에서 clone 명령어 실행 시에는 인증토큰 문제가 있을 텐데 (Github 연동 사용법 - Mac OS)[https://wg-cy.tistory.com/343] 여길 참고해도 되고 나같은 경우는
       `https://[깃헙 인증토큰]@github.com/[사용자 이름]/[리포지토리 경로]`
       위의 github 경로를 clone 했더니 인증 토근문제 해결되었다
 4. 로컬에서 이전 `munkyeong.blog` 깃헙 clone 받고 `munkyeong.github.io` 리포지토리로 mirror push
    1. 이때 여기서도 마찬가지로 **인증토큰** 사용해서 github url 로 push 해야함!
 
-> 위의 과정 명령어는 [깃허브 잔디 누락 현상](https://kdjun97.github.io/git-github/plant-grass/) 여기 블로그에 정리 잘 되어있다! 여기 참고하면 될듯
+> 위의 과정 명령어는 (깃허브 잔디 누락 현상)[https://kdjun97.github.io/git-github/plant-grass/] 여기 블로그에 정리 잘 되어있다! 여기 참고하면 될듯
 > 알아야 할 점이라면 mac OS일 경우 인증토큰 있어야 clone + mirror push 제대로 가능하다는거
