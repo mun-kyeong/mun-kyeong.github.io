@@ -5,17 +5,12 @@ License: https://www.wowthemes.net/freebies-license/
 */
 @media screen and (min-width: 1500px) {
   html {
-    font-size: 17px;
+    font-size: 18px;
     color: #666;
   } /* Increase the font size on higher resolutions */
   .container {
     max-width: 80%;
   }
-}
-
-h1,
-h2 {
-  color: black;
 }
 
 .mainheading {
@@ -343,10 +338,14 @@ span.post-read-more a:hover {
 
 .article-post {
   font-family: "Pretendard-Regular";
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   line-height: 1.84;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
+.article-post h1 {
+  color: rgba(0, 0, 0, 0.9);
+}
+
 .article-post-container {
   max-width: 90% !important;
 }

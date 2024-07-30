@@ -13,11 +13,11 @@ image: assets/images/thumbnail/backend-bootcamp.png
 
 <br/>
 
-# 1. Spring Boot VS Spring
+## 1. Spring Boot VS Spring
 
 Spring과 Spring Boot 모두 java 기반의 애플리케이션 개발을 위한 프레임워크이지만 사용 방식과 목적에 따라 차이가 있다.
 
-## Spring
+### Spring
 
 Spring framework라고도 불리는데 주로 java EE (Enterprise Edition : 분산 ) 애플리케이션을 빌드할 수 있게 해주는 오픈소스 프레임워크이다.
 
@@ -29,7 +29,7 @@ Spring framework가 가지고 있는 특징으로는
 
   <br/>
 
-## Spring Boot
+### Spring Boot
 
 스프링 프레임워크를 기반으로 하며, 설정 작업을 최소화 하고 빠르게 애플리케이션을 개발할 수 있도록 도와주는 확장 프로젝트이다.
 Spring Boot는 프로덕션 준비 기능을 포함하고 있어 애플리케이션을 더욱 쉽고 배포하고 운영할 수 있다.
@@ -47,4 +47,130 @@ Spring Boot의 특징으로는
 
 이번 실습의 경우 [Spring initializr](https://start.spring.io/) 를 통해 프로젝트를 생성하고 github에 upload 하여 사용하였다.
 
-이전 부트캠프때는 DI 의존성 주입부터 시작해서 Spring 환경 설정에 더 많은 시간을 쏟아부었었는데 확연히 Spring Boot를 사용해보니 전보다 더 빠르게 사용되는걸 확인할 수 있었다.
+<br/>
+
+## 2. Spring Boot Controller
+
+Controller의 역할 : URL에 대한 매핑을 추가하는 역할을 한다.
+
+브라우저와 같은 클라이언트의 페이지 요청 발생 시 spring boot는 **가장 먼저 controller에 등록된 URL 매핑**을 찾고, 해당 URL 매핑을 발견하면 해당 매서드를 실행시킨다.
+
+`@GetMapping` 또는 `@PostMapping` 과 같은 어노테이션을 통해 URL 메서드를 연결시킬 수 있다.
+
+- Controller 제작방법
+
+```java
+@Controller
+public class MainController {
+  @GetMpping("/sbb")
+  @ResponseBody
+  public String index() {
+    return "index";
+  }
+}
+```
+
+- MainController 클래스에 `@Controller` 어노테이션을 적용시켜 주면 해당 MainController 클래스는 spring boot의 컨트롤러가 된다.
+- index() 메서드에 `@GetMapping` 어노테이션을 적용시켜 해당 URL(/sbb) 을 요청할 때에 실행되는 메서드가 된다.
+- index() 메서드에 `@ResponseBody` 어노테이션을 적용시켜 주면 URL에 요청에 대한 응답으로 String 문자열을 return 하겠다는 의미로 사용된다.
+  - `@ResponseBody` 어노테이션이 없다면 'index' 라는 문자열을 return 하는것이 아닌 **'index'라는 이름의 템플릿 파일**을 찾는다.
+
+<br/>
+<br/>
+
+## 3. H2 DataBase 정의
+
+H2 DataBase는 주로 개발환경에서 사용하는 Java 기반의 가벼운 DBMS(데이터베이스 관리 소프트웨어)이다.
+주로 개발, 테스트, 소형 에플리케이션에서 사용된다.
+
+- H2 DataBase 사용 방법 간략 정리
+
+1. `build.gradle` 파일에 `runtimeOnly 'com.h2database:h2'`코드 추가
+2. `application.properties` 파일에 DataBase 설정 추가
+
+```java
+//DataBase
+spring.h2.console.enabled=true          //h2 콘솔 접속 true
+spring.h2.console.path=/h2-console      //h2 콘솔 접속 URL 경로
+spring.datasource.url=jdbc:h2:~/local   //database 접속 경로
+spring.datasource.driverClassName=org.h2.Driver //database 드라이버 클래스명
+spring.datasource.username=sa           //database 사용자명
+spring.datasource.password=             //database 사용자 비밀번호
+```
+
+3. `spring.datasource.url` 경로에서 database 파일 생성
+   `touch db_dev.mv.db` 터미널에 입력
+4. `MainApplication` Run 시작 후 `http://localhost:[port번호]/h2-console` 경로로 접속
+   위에서 설정해둔 DataBase 설정을 그대로 따른다면 h2 Database에 접근 가능하다.
+   <br/>
+   <br/>
+
+## 4. ORM 정의
+
+- `ORM` : Object Relational Mapping
+
+데이터베이스는 java 언어를 이해하지 못하므로 `ORM` 이라는 도구를 통해 Java 문법으로도 데이터베이스를 다룰 수 있게 만들 수 있다.
+
+### ORM VS SQL
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>subject</th>
+    <th>content</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>안녕하세요</td>
+    <td>본문 내용입니다</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>ORM의 설명을</td>
+    <td>돕기 위한 글입니다</td>
+  </tr>
+</table>
+
+위의 table과 같은 형식으로 데이터를 저장하기 위해서 SQL 쿼리문과 ORM 코드를 비교해보자면
+
+```SQL
+  -- SQL
+  insert into question (id, subject, content) values (1,  '안녕하세요', '본문 내용입니다')
+
+```
+
+```java
+//ORM
+  Question q1 = new Question();
+  q1.setId(1);
+  q1.setSubject("안녕하세요");
+  q1.setContent("본문 내용입니다");
+  this.questionRepository.save(q1);
+```
+
+이와 같은 차이를 확인할 수 있다.
+간단히 요약자하면, ORM을 사용하면 MySQL, 오라클 DB 등과 같은 DBMS(데이터베이스 관리 소프트웨어) 종류에 관계 없이 **일관된 자바 코드**를 작성할 수 있어서 프로그램의 유지/보수에 편하다.
+
+<br/>
+<br/>
+
+## 5. Lombok이란
+
+Lombok은 Java 개발을 보다 간편하게 만들어주는 라이브러리로, 반복적인 코드 작성을 줄여주는 어노테이션을 지원해준다.
+
+Lombok을 사용하면 코드 가독성과 유지보수성이 좋아지고 개발 시간도 절약가능하다.
+
+- Lombok의 주요기능
+
+1. `@Getter` `@Setter`
+   클래스 필드에 대한 getter, stter 메서드 자동생성
+2. `@ToString`
+   클래스의 toString 메서드 자동생성
+3. `@EqualsAndHashCode`
+   equals와 hashCode 메서드를 자동으로 생성해줌
+4. `@RequiredArgsConstructor`
+   필요한 필드를 인수로 받는 생성자를 자동생성
+5. `@Data`
+   위의 1,2,3,4 어노테이션을 한번에 적용시켜줌
+
+위의 어노테이션 등이 존재하며, 해당 어노테이션을 통해 필요한 메서드들을 매우 간편하게 사용할 수 있다.
