@@ -8,12 +8,12 @@ image: assets/images/thumbnail/backend-bootcamp.png
 
 > 요약 <br/>
 > PNU 백엔드 부트캠프 1일차 - 수업을 들으며 공부한 내용을 정리한 글입니다.
->
-> 1.  Spring VS Spring Boot
 
 <br/>
 
 ## 1. Spring Boot VS Spring
+
+---
 
 Spring과 Spring Boot 모두 java 기반의 애플리케이션 개발을 위한 프레임워크이지만 사용 방식과 목적에 따라 차이가 있다.
 
@@ -43,13 +43,17 @@ Spring Boot의 특징으로는
 
   <br/>
 
-> 요약 <br/> > **Spring Framework** :많은 설정 작업이 필요하기에 초기 설정이 복잡할 수 있으나, 더 많은 유연성과 통제력을 제공한다. <br/> > **Spring Boot** : 자동 설정 기능과 스타터 종속성을 통해 애플리케이션을 빠르게 시작할 수 있다. 특정 상황에서는 수동 설정이 필요할수도 있으나 개발 생산성과 편의성을 극대화 한다는 장점이 있다.
+> 요약 <br/> > **Spring Framework** > <br/>많은 설정 작업이 필요하기에 초기 설정이 복잡할 수 있으나, 더 많은 유연성과 통제력을 제공한다.
+>
+> **Spring Boot** > <br/>자동 설정 기능과 스타터 종속성을 통해 애플리케이션을 빠르게 시작할 수 있다. 특정 상황에서는 수동 설정이 필요할수도 있으나 개발 생산성과 편의성을 극대화 한다는 장점이 있다.
 
 이번 실습의 경우 [Spring initializr](https://start.spring.io/) 를 통해 프로젝트를 생성하고 github에 upload 하여 사용하였다.
 
 <br/>
 
 ## 2. Spring Boot Controller
+
+---
 
 Controller의 역할 : URL에 대한 매핑을 추가하는 역할을 한다.
 
@@ -80,6 +84,8 @@ public class MainController {
 
 ## 3. H2 DataBase 정의
 
+---
+
 H2 DataBase는 주로 개발환경에서 사용하는 Java 기반의 가벼운 DBMS(데이터베이스 관리 소프트웨어)이다.
 주로 개발, 테스트, 소형 에플리케이션에서 사용된다.
 
@@ -100,6 +106,7 @@ spring.datasource.password=             //database 사용자 비밀번호
 
 3. `spring.datasource.url` 경로에서 database 파일 생성
    `touch db_dev.mv.db` 터미널에 입력
+
 4. `MainApplication` Run 시작 후 `http://localhost:[port번호]/h2-console` 경로로 접속
    위에서 설정해둔 DataBase 설정을 그대로 따른다면 h2 Database에 접근 가능하다.
    <br/>
@@ -107,27 +114,29 @@ spring.datasource.password=             //database 사용자 비밀번호
 
 ## 4. ORM 정의
 
+---
+
 - `ORM` : Object Relational Mapping
 
 데이터베이스는 java 언어를 이해하지 못하므로 `ORM` 이라는 도구를 통해 Java 문법으로도 데이터베이스를 다룰 수 있게 만들 수 있다.
 
 ### ORM VS SQL
 
-<table>
-  <tr>
-    <th>id</th>
-    <th>subject</th>
-    <th>content</th>
+<table style="border: 1px solid; border-collapse: collapse; width: 100%; text-align: left;">
+  <tr style="background-color: #f2f2f2;">
+    <th style="border: 1px solid; padding: 10px;">id</th>
+    <th style="border: 1px solid; padding: 10px;">subject</th>
+    <th style="border: 1px solid; padding: 10px;">content</th>
   </tr>
   <tr>
-    <td>1</td>
-    <td>안녕하세요</td>
-    <td>본문 내용입니다</td>
+    <td style="border: 1px solid; padding: 10px;">1</td>
+    <td style="border: 1px solid; padding: 10px;">안녕하세요</td>
+    <td style="border: 1px solid; padding: 10px;">본문 내용입니다</td>
   </tr>
   <tr>
-    <td>2</td>
-    <td>ORM의 설명을</td>
-    <td>돕기 위한 글입니다</td>
+    <td style="border: 1px solid; padding: 10px;">2</td>
+    <td style="border: 1px solid; padding: 10px;">ORM의 설명을</td>
+    <td style="border: 1px solid; padding: 10px;">돕기 위한 글입니다</td>
   </tr>
 </table>
 
@@ -156,21 +165,27 @@ spring.datasource.password=             //database 사용자 비밀번호
 
 ## 5. Lombok이란
 
+---
+
 Lombok은 Java 개발을 보다 간편하게 만들어주는 라이브러리로, 반복적인 코드 작성을 줄여주는 어노테이션을 지원해준다.
 
 Lombok을 사용하면 코드 가독성과 유지보수성이 좋아지고 개발 시간도 절약가능하다.
 
 - Lombok의 주요기능
 
-1. `@Getter` `@Setter`
+1. `@Getter` `@Setter` <br/>
    클래스 필드에 대한 getter, stter 메서드 자동생성
-2. `@ToString`
+
+2. `@ToString`<br/>
    클래스의 toString 메서드 자동생성
-3. `@EqualsAndHashCode`
+
+3. `@EqualsAndHashCode`<br/>
    equals와 hashCode 메서드를 자동으로 생성해줌
-4. `@RequiredArgsConstructor`
+
+4. `@RequiredArgsConstructor`<br/>
    필요한 필드를 인수로 받는 생성자를 자동생성
-5. `@Data`
+
+5. `@Data`<br/>
    위의 1,2,3,4 어노테이션을 한번에 적용시켜줌
 
 위의 어노테이션 등이 존재하며, 해당 어노테이션을 통해 필요한 메서드들을 매우 간편하게 사용할 수 있다.
