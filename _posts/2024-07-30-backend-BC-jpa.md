@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PNU backend-bootcamp 0729 키워드 "
+title: "PNU backend-bootcamp 0730 키워드 "
 author: munkyeong
 categories: [study]
 image: assets/images/thumbnail/backend-bootcamp.png
