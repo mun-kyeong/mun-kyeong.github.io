@@ -33,8 +33,8 @@ pre {
   border: #e3edf3 1px solid;
   width: 100%;
   padding: 7px;
-  font-family: "Pretendard-Regular", "intelone-mono-font-family-regular",
-    monospace, sans-serif;
+  font-family: "Nanum Gothic", "intelone-mono-font-family-regular", monospace,
+    sans-serif;
   font-size: 0.9rem;
   white-space: pre;
   overflow: auto;
@@ -337,10 +337,10 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-  font-family: "Pretendard-Regular";
+  font-family: "Nanum Gothic";
   font-size: 1rem;
-  line-height: 1.64;
-  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.84;
+  color: rgba(0, 0, 0, 0.6);
 }
 .article-post h1,
 h2 {
@@ -700,7 +700,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Pretendard-Regular", -apple-system,
+  font-family: "Nanum Gothic", -apple-system,
     "intelone-mono-font-family-regular" system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -728,7 +728,7 @@ h6 {
 }
 
 .layout-page .article-post {
-  font-family: "Pretendard-Regular", -apple-system, BlinkMacSystemFont,
+  font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont,
     "intelone-mono-font-family-regular", "Segoe UI", Roboto, "Helvetica Neue",
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
@@ -894,7 +894,7 @@ iframe {
   line-height: 1;
   padding: 2px 3px;
   width: 150px;
-  font-family: "Pretendard-Regular", Arial;
+  font-family: "Nanum Gothic", Arial;
   text-align: center;
   border-radius: 3px;
   transition: all 0.4s;

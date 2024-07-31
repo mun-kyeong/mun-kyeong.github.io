@@ -26,3 +26,15 @@
   font-weight: 300;
   font-style: normal;
 }
+
+/* [1] */
+@font-face {
+  font-family: "Nanum Gothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/s/nanumgothic/v23/PN_3Rfi-oW3hYwmKDpxS7F_z-9LZxnthzY0SO7Jj27F-wOe3JI_cmfgf-Q.1.woff2)
+    format("woff2");
+  unicode-range: U+f92f-f980, U+f982-f9c9;
+}
+
+// @import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
