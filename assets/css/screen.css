@@ -339,8 +339,8 @@ span.post-read-more a:hover {
 .article-post {
   font-family: "Pretendard-Regular";
   font-size: 1rem;
-  line-height: 1.84;
-  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.64;
+  color: rgba(0, 0, 0, 0.8);
 }
 .article-post h1,
 h2 {

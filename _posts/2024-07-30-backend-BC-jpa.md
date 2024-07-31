@@ -113,11 +113,7 @@ public class QuestionController {
 2. QuestionRepository의 `findAll` 메서드를 통해 질문 목록 데이터를 받아와 `Model` 객체에 **"questionList"** 라는 이름으로 저장한다.
    > 이때 Model 객체는 자바와 템플릿 간의 연결 고리 역할을 하기에 템플릿에서 해당 이름으로 데이터를 사용할 수 있다.
 
-<br/>
-
 controller에서 넘겨준 데이터를 바탕으로 `question_list.html` 템플릿에서 아래와 같이 사용할 수 있다.
-
-<br/>
 
 ```html
 <table>
