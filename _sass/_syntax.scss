@@ -48,7 +48,6 @@ $dt-yellow: #f1fa8c;
   .err,
   .g,
   .l,
-  .n,
   .x,
   .p,
   .ge,
@@ -72,6 +71,10 @@ $dt-yellow: #f1fa8c;
   }
   .nd {
     color: #c7c736;
+  }
+  .n,
+  .na {
+    color: #ff79c6;
   }
 
   .gh,
@@ -108,7 +111,10 @@ $dt-yellow: #f1fa8c;
     color: $dt-cyan;
   }
 
-  .kd {
+  /*수정함*/
+  .kd,
+  .k,
+  .nt {
     color: #ffa91b;
   }
 
@@ -122,25 +128,24 @@ $dt-yellow: #f1fa8c;
     font-style: italic;
   }
 
-  .na,
-  .nf,
   .fm {
     color: $dt-green;
   }
-  .nc {
+  .nc .nf {
     color: white;
   }
 
-  .k,
-  .o,
   .cp,
   .kc,
   .kn,
   .kp,
   .kr,
-  .nt,
   .ow {
     color: $dt-pink;
+  }
+
+  .o {
+    color: white;
   }
 
   .m,

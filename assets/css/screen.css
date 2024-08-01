@@ -944,7 +944,7 @@ iframe {
 }
 
 /* code */
-code {
+code .language-plaintext {
   background-color: #eeeeee;
   font-size: 0.8rem;
   border-radius: 4px;
