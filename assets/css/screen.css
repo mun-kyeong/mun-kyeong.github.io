@@ -30,7 +30,7 @@ a:hover {
 pre {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: #e3edf3 1px solid;
+  /* border: #e3edf3 1px solid; */
   width: 100%;
   padding: 7px;
   font-family: "Nanum Gothic", "intelone-mono-font-family-regular", monospace,
@@ -38,10 +38,10 @@ pre {
   font-size: 0.9rem;
   white-space: pre;
   overflow: auto;
-  background: #181818;
+  /* background: #181818; */
   border-radius: 0px;
   line-height: 1.6;
-  color: #333;
+  /* color: #333; */
   margin-bottom: -rem;
 }
 
