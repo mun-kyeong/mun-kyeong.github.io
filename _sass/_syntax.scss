@@ -71,7 +71,7 @@ $dt-yellow: #f1fa8c;
     color: $dt-gray-light;
   }
   .nd {
-    color: #d0d016;
+    color: #c7c736;
   }
 
   .gh,
@@ -97,7 +97,6 @@ $dt-yellow: #f1fa8c;
     color: $dt-blue;
   }
 
-  .kd,
   .kt,
   .nb,
   .nl,
@@ -109,7 +108,10 @@ $dt-yellow: #f1fa8c;
     color: $dt-cyan;
   }
 
-  .kd,
+  .kd {
+    color: #ffa91b;
+  }
+
   .nb,
   .nl,
   .nv,
@@ -121,10 +123,12 @@ $dt-yellow: #f1fa8c;
   }
 
   .na,
-  .nc,
   .nf,
   .fm {
     color: $dt-green;
+  }
+  .nc {
+    color: white;
   }
 
   .k,
