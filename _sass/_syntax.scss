@@ -21,6 +21,7 @@ $dt-yellow: #f1fa8c;
 .highlight {
   background: $dt-gray-dark;
   color: $dt-gray-light;
+  border-radius: 10px;
 
   .hll,
   .s,
@@ -60,7 +61,6 @@ $dt-yellow: #f1fa8c;
   .gt,
   .ld,
   .no,
-  .nd,
   .ni,
   .ne,
   .nn,
@@ -69,6 +69,9 @@ $dt-yellow: #f1fa8c;
   .w,
   .bp {
     color: $dt-gray-light;
+  }
+  .nd {
+    color: #d0d016;
   }
 
   .gh,
