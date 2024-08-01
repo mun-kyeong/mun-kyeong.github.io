@@ -338,9 +338,9 @@ span.post-read-more a:hover {
 
 .article-post {
   font-family: "Nanum Gothic";
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.84;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.8);
 }
 .article-post h1,
 h2 {
@@ -360,7 +360,7 @@ blockquote {
 
 .article-post p,
 .article-post blockquote {
-  margin: 0 0 1.2rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .featured-image {
