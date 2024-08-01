@@ -104,11 +104,15 @@ git블로그 환경 세팅을 포함해서 변경된 UI 확인도 할겸 commit 
 결과만 말하자면
 
 1. 원래 fork() 된 채로 남아있던 `mun-kyeong.github.io` 리포지토리 이름 변경 -> `mun-kyeong.blog` 이라 부르겟음
+
 2. 잔디 기록을 남길 수 있는 `mun-kyeong.github.io` 리포지토리 생성 (fork()된 리포지토리가 아니라 완전 새로 생성된 리포지토리다)
+
 3. 로컬에서 아무런 폴서 생성 후 이전의 `munkyeong.blog` clone 받기
+
    1. 이때, mac에서 clone 명령어 실행 시에는 인증토큰 문제가 있을 텐데 [Github 연동 사용법 - Mac OS](https://wg-cy.tistory.com/343) 여길 참고해도 되고 나같은 경우는
       `https://[깃헙 인증토큰]@github.com/[사용자 이름]/[리포지토리 경로]`
       위의 github 경로를 clone 했더니 인증 토근문제 해결되었다
+
 4. 로컬에서 이전 `munkyeong.blog` 깃헙 clone 받고 `munkyeong.github.io` 리포지토리로 mirror push
    1. 이때 여기서도 마찬가지로 **인증토큰** 사용해서 github url 로 push 해야함!
 

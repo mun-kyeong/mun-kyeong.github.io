@@ -131,7 +131,8 @@ $dt-yellow: #f1fa8c;
   .fm {
     color: $dt-green;
   }
-  .nc .nf {
+  .nc,
+  .nf {
     color: white;
   }
 
