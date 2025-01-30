@@ -949,10 +949,10 @@ iframe {
 }
 
 /* code */
-code {
-  background-color: #eeeeee;
-  font-size: 0.8rem;
-  border-radius: 4px;
-  color: #5085cc;
-  padding: 2px 4px;
+code .language-plaintext .highlighter-rouge {
+  background-color: #eeeeee !important;
+  font-size: 0.8rem !important;
+  border-radius: 4px !important;
+  color: #5085cc !important;
+  padding: 2px 4px !important;
 }
