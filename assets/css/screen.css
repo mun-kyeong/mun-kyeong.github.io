@@ -949,7 +949,7 @@ iframe {
 }
 
 /* code */
-pre code .language-plaintext {
+code .highlighter-rouge {
   background-color: #eeeeee;
   font-size: 0.8rem;
   border-radius: 4px;
