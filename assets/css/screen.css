@@ -968,6 +968,6 @@ code.language-plaintext {
 
 /* // highlighter-rouge 클래스가 적용된 code 요소 */
 code.highlighter-rouge {
-  /* font-family: "Courier New", monospace;  */
+  font-family: "Pretendard-Regular", monospace;
   color: #5085cc;
 }
