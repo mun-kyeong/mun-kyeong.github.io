@@ -959,7 +959,6 @@ iframe {
 
 /* // language-plaintext 클래스가 적용된 code 요소 */
 code.language-plaintext {
-  font-size: 1rem;
   color: #5085cc;
   background-color: #eeeeee;
   padding: 2px 4px;
