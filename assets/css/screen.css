@@ -724,7 +724,6 @@ h6 {
 
 .article-post strong {
   font-weight: 900;
-  color: lightseagreen;
 }
 
 .article-post img.shadow {
@@ -949,7 +948,7 @@ iframe {
 }
 
 /* code */
-code .highlighter-rouge {
+code .language-plaintext.highlighter-rouge {
   background-color: #eeeeee;
   font-size: 0.8rem;
   border-radius: 4px;
