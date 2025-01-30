@@ -58,18 +58,13 @@ image: assets/images/thumbnail/woowa-course.png
 사실 이런 고민들은 내가 평소에도 자주 하는 고민들이여서 조금 더 쉽게 접근할 수 있지 않았나 싶다.
 
 <br/>
-<p style="color:lightsalmon;">
+<p style="color:lightsalmon;font-size:20px; font-weight:bold;">
 
-### 1. 프로그래머가 되려는 이유와 지원 동기 (2000자 이내)
+1. 프로그래머가 되려는 이유와 지원 동기 (2000자 이내)
 
 </p>
 
-<details>
-    <summary>지원항목 상세보기</summary>
-
 ![첫번째 지원서 항목](/assets/images/image/woowa7-review/first-apply.png)
-
-</details>
 
 <br/>
 
@@ -88,18 +83,13 @@ image: assets/images/thumbnail/woowa-course.png
 작업했던 프로젝트 중 플라토 캘린더의 예시를 들며 1번 항목을 마무리했다.
 
 <br/>
-<p style="color:lightsalmon;">
+<p style="color:lightsalmon;font-size:20px; font-weight:bold;">
 
-### 2. 오랜 시간 몰입했던 경험 그리고 도전 (2000자 이내)
+2. 오랜 시간 몰입했던 경험 그리고 도전 (2000자 이내)
 
 </p>
 
-<details>
-    <summary>지원항목 상세보기</summary>
-
 ![첫번째 지원서 항목](/assets/images/image/woowa7-review/second-apply.png)
-
-</details>
 
 <br/>
 
@@ -123,18 +113,13 @@ image: assets/images/thumbnail/woowa-course.png
 적어도 나에겐 그림은 하루아침에 뚝딱 잘 그려지는건 아니였기 때문에 비슷한 그림을 여러 번 그리더라도 변화는 그 속에서 아주 조금씩 이루어졌다. 그림을 좋아하게 된 순간부터 한장이라도 꾸준히 그리는 것이 중요하다는걸 체감했기에 프로그래밍을 하며 당장에 실력이 늘지 않아 답답한 순간에도 조금씩 발전할 것이라는 믿음으로 이겨낼 수 있었던 것 같다.
 
 <br/>
-<p style="color:lightsalmon;">
+<p style="color:lightsalmon;font-size:20px; font-weight:bold;">
 
-### 3. 프리코스 목표 설정 (1000자 이내)
+3. 프리코스 목표 설정 (1000자 이내)
 
 </p>
 
-<details>
-    <summary>지원항목 상세보기</summary>
-
 ![첫번째 지원서 항목](/assets/images/image/woowa7-review/third-apply.png)
-
-</details>
 
 <br/>
 
