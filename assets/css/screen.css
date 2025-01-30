@@ -723,9 +723,8 @@ h6 {
 }
 
 .article-post p strong {
-  font-family: "Pretendard-Bold", "intelone-mono-font-family-regular", monospace,
-    sans-serif;
-  font-weight: 900;
+  font-family: "Pretendard-Regular";
+  font-weight: bold;
 }
 
 .article-post img.shadow {
