@@ -948,7 +948,7 @@ iframe {
 }
 
 /* code */
-code .language-plaintext.highlighter-rouge {
+code {
   background-color: #eeeeee;
   font-size: 0.8rem;
   border-radius: 4px;
