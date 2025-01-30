@@ -949,10 +949,25 @@ iframe {
 }
 
 /* code */
-code .language-plaintext .highlighter-rouge {
-  background-color: #eeeeee !important;
-  font-size: 0.8rem !important;
-  border-radius: 4px !important;
-  color: #5085cc !important;
-  padding: 2px 4px !important;
+/* code .language-plaintext .highlighter-rouge {
+  background-color: #eeeeee;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  color: #5085cc;
+  padding: 2px 4px;
+} */
+
+/* // language-plaintext 클래스가 적용된 code 요소 */
+code.language-plaintext {
+  font-size: 1rem;
+  color: #5085cc;
+  background-color: #eeeeee;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* // highlighter-rouge 클래스가 적용된 code 요소 */
+code.highlighter-rouge {
+  /* font-family: "Courier New", monospace;  */
+  color: #5085cc;
 }
