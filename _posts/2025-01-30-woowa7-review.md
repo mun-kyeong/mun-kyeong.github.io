@@ -50,9 +50,9 @@ image: assets/images/thumbnail/woowa-course.png
 
 입학 설명회에선 메타인지를 `생각을 위한 생각` 이라고 비유를 했는데 예시를 들어보자면 어느 요구사항을 처리해야 할 때 그냥 기계적으로 해결하는 것이 아니라 조금 더 **근본적인 이유**를 고민하는 것이라고 생각하면 된다.
 
-1. 이 요구사항은 `왜` 있는걸까?
-2. 내가 선택한 접근 방법이 `적절한 방법`인가?
-3. 이 요구사항을 해결하려면 `무엇`을 알아야 할까?
+1. 이 요구사항은 **왜** 있는걸까?
+2. 내가 선택한 접근 방법이 **적절한 방법**인가?
+3. 이 요구사항을 해결하려면 **무엇**을 알아야 할까?
 
 등의 고민이 그 예시가 될 수 있다.
 사실 이런 고민들은 내가 평소에도 자주 하는 고민들이여서 조금 더 쉽게 접근할 수 있지 않았나 싶다.
@@ -85,11 +85,11 @@ image: assets/images/thumbnail/woowa-course.png
 
 </p>
 
-![첫번째 지원서 항목](/assets/images/image/woowa7-review/second-apply.png)
+![두번째 지원서 항목](/assets/images/image/woowa7-review/second-apply.png)
 
 <br/>
 
-두번째 항목은 내가 몰입해본 경험에 대한 소개였다. 사실.. 사족을 조금 덛붙이자면 카이스트 몰입캠프에서 떨어진 적이 있어 조금 아픈 항목이기도 했다. 그럼에도 다행이였던건, 몰캠에서 떨어졌기 때문에 지원서에서 요구했던 **몰입했던 경험** 이 **꼭 프로그래밍과 연관되지 않아도 된다는 점**을 깨달았던 점이랄까
+두번째 항목은 내가 몰입해본 경험에 대한 소개였다. 사실.. 사족을 조금 덧붙이자면 카이스트 몰입캠프에서 떨어진 적이 있어 조금 아픈 항목이기도 했다. 그럼에도 다행이였던건, 몰캠에서 떨어졌기 때문에 지원서에서 요구했던 **몰입했던 경험** 이 **꼭 프로그래밍과 연관되지 않아도 된다는 점**을 깨달았던 점이랄까
 
 <br/>
 
@@ -112,11 +112,11 @@ image: assets/images/thumbnail/woowa-course.png
 <br/>
 <p style="color:lightsalmon;font-size:30px; font-weight:bold;">
 
-3. 프리코스 목표 설정 (1000자 이내)
+1. 프리코스 목표 설정 (1000자 이내)
 
 </p>
 
-![첫번째 지원서 항목](/assets/images/image/woowa7-review/third-apply.png)
+![세번째 지원서 항목](/assets/images/image/woowa7-review/third-apply.png)
 
 <br/>
 

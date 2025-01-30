@@ -107,7 +107,7 @@ git블로그 환경 세팅을 포함해서 변경된 UI 확인도 할겸 commit 
 
 2. 잔디 기록을 남길 수 있는 `mun-kyeong.github.io` 리포지토리 생성 (fork()된 리포지토리가 아니라 완전 새로 생성된 리포지토리다)
 
-3. 로컬에서 아무런 폴서 생성 후 이전의 `munkyeong.blog` clone 받기
+3. 로컬에서 아무런 폴더 생성 후 이전의 `munkyeong.blog` clone 받기
 
    1. 이때, mac에서 clone 명령어 실행 시에는 인증토큰 문제가 있을 텐데 [Github 연동 사용법 - Mac OS](https://wg-cy.tistory.com/343) 여길 참고해도 되고 나같은 경우는
       `https://[깃헙 인증토큰]@github.com/[사용자 이름]/[리포지토리 경로]`
@@ -118,3 +118,82 @@ git블로그 환경 세팅을 포함해서 변경된 UI 확인도 할겸 commit 
 
 > 위의 과정 명령어는 [깃허브 잔디 누락 현상](https://kdjun97.github.io/git-github/plant-grass/) 여기 블로그에 정리 잘 되어있다! 여기 참고하면 될듯
 > 알아야 할 점이라면 mac OS일 경우 인증토큰 있어야 clone + mirror push 제대로 가능하다는거
+
+<br/><br/>
+
+## 5. html 특정 태그와 css class 스타일 수정
+
+원래 스타일의 경우, 백틱을 이용해서 글자를 감싸면 `<code>`로 감싸지면서 내장되어있는 bootstrap의 스타일을 따르게 된다. 이 스타일을 변경하고 싶어서
+
+```css
+.code {
+  color : color: #5085cc;
+}
+```
+
+이런식으로 변경을 했었는데 알고보니 `<code>` 태그로 감싸져있는 블록이 총 2개가 있었다. 아래 사진과 같이 백틱으로 감싸져있는 **코드태그(1)** 부분과 전체 코드를 감싸는 **코드블록(2)** 부분이다.
+
+![코드 요소검사 사진](/assets/images/image/start-gitblog/codeElement.png)
+
+<br/>
+
+1. **코드 태그 부분**
+
+코드 태그의 경우 요소검사를 통해 아래 사진과 같이 `<code>`라는 태그와 `class="language-plaintext highlighter-rouge"` 이렇게 class 속성이 추가되어있는 것을 확인할 수 있다.
+
+![코드태그 요소검사](/assets/images/image/start-gitblog/code-tag.png)
+
+1. **코드 블록 부분**
+
+코드 블록의 경우 class 추가 없이 `<code>` 태그로만 감싸져있는 것을 확인할 수 있다.
+
+![코드블럭 요소검사](/assets/images/image/start-gitblog/code-block.png)
+
+위의 1,2번 요소검사를 통해 내가 적용하고 싶은 코드 태그 부분에만 css 속성을 덮어씌우고 싶다면 아래와 같이 css 파일을 작성하면 된다.
+
+```css
+code.language-plaintext {
+  color: #5085cc;
+  background-color: #eeeeee;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+code.highlighter-rouge {
+  font-family: "Pretendard-Regular", monospace;
+  color: #5085cc;
+}
+```
+
+내가 이전에 잘못 작성했던 방식은 아래와 같은 방식이였는데,
+
+```css
+code.language-plaintext .highlighter-rouge {
+  color: #5085cc;
+  background-color: #eeeeee;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+```
+
+두번째 방식으로 코드를 작성했을 때 적용되지 않았던 이유는 css 클래스 선택자를 잘못 이해하고 있었기 때문이다.
+
+첫번째 방식의 경우엔 `code` 태그 안의 `language-plaintext,highlighter-rouge` 두개의 클래스를 가지는 요소에 속성을 적용하는 방식이다.
+
+```html
+<code class="language-plaintext highlighter-rouge">Some code</code>
+```
+
+두번재 방식의 경우엔 `code` 태그 안의 `language-plaintext` 클래스를 가지는 요소를 찾고 그 안에서
+`highlighter-rouge` 클래스를 가지는 요소를 찾는 의미이다.
+아래 html 구조를 참고하면 된다.
+
+```html
+<code>
+  <div class="language-plaintext">
+    <span class="highlighter-rouge">Some code</span>
+  </div>
+</code>
+```
+
+> 내가 필요했던 방식은 첫번째 방식이였다! 코드 태그에만 속성이 적용되도록 수정 되었다.

@@ -948,15 +948,6 @@ iframe {
   border-left: 3px solid rgb(43, 187, 126);
 }
 
-/* code */
-/* code .language-plaintext .highlighter-rouge {
-  background-color: #eeeeee;
-  font-size: 0.8rem;
-  border-radius: 4px;
-  color: #5085cc;
-  padding: 2px 4px;
-} */
-
 /* // language-plaintext 클래스가 적용된 code 요소 */
 code.language-plaintext {
   color: #5085cc;
