@@ -58,7 +58,7 @@ image: assets/images/thumbnail/woowa-course.png
 사실 이런 고민들은 내가 평소에도 자주 하는 고민들이여서 조금 더 쉽게 접근할 수 있지 않았나 싶다.
 
 <br/>
-<p style="color:lightsalmon;font-size:20px; font-weight:bold;">
+<p style="color:lightsalmon;font-size:40px; font-weight:bold;">
 
 1. 프로그래머가 되려는 이유와 지원 동기 (2000자 이내)
 
@@ -70,11 +70,7 @@ image: assets/images/thumbnail/woowa-course.png
 
 첫번재 지원서에서 묻는 항목은 **내가 어떤 사람**이고 **왜 프로그래머가 되려 하는지**를 설명하는 항목이다.
 
-사실 적으면 끝도 없이 적을수도 있는 항목이였지만 업적/프로젝트 나열형의 자소서라면 나보다 대단한 사람들이 얼마나 더 많겠나, 싶었다. 이것보단 조금 더 **내가 어떤 사람**인지를 보여주고 싶었기에,
-
-`내가 왜 프로그래밍을 좋아하게 되었는지`
-
-에 대한 질문부터 시작하게 되었다.
+사실 적으면 끝도 없이 적을수도 있는 항목이였지만 업적/프로젝트 나열형의 자소서라면 나보다 대단한 사람들이 얼마나 더 많겠나, 싶었다. 이것보단 조금 더 **내가 어떤 사람**인지를 보여주고 싶었기에, **"내가 왜 프로그래밍을 좋아하게 되었는지"** 에 대한 질문부터 시작하게 되었다.
 
 생각해보면 나는 늘 무엇인가를 만들고자 하는 목표가 강한 사람들과 생각을 나누고 사용자를 위해 수없이 고민하는 순간들을 참 좋아했었다. 나로 인해 사람들이 행복하고, 사람들이 쏟아내는 열정 속에서 함께 타오르는 것을 좋아했던 것 같다. 이런 감정들이 나로 하여금 조금 더 가치 있는 사람이 되고 싶게끔 만들었다.
 
@@ -83,7 +79,7 @@ image: assets/images/thumbnail/woowa-course.png
 작업했던 프로젝트 중 플라토 캘린더의 예시를 들며 1번 항목을 마무리했다.
 
 <br/>
-<p style="color:lightsalmon;font-size:20px; font-weight:bold;">
+<p style="color:lightsalmon;font-size:40px; font-weight:bold;">
 
 2. 오랜 시간 몰입했던 경험 그리고 도전 (2000자 이내)
 
@@ -100,6 +96,7 @@ image: assets/images/thumbnail/woowa-course.png
 > Tip 2) <br/>
 > 굉장히 주관적인 점이긴 하지만.. 자소서에서 몰입했던 경험을 묻는 경우가 많더라구요. <br/>
 > 나는 이걸 꼭 내 직무랑 연관된 몰입 경험을 적어야 한다고 생각을 했었는데, 몰입캠프를 합격했었던 다른 분의 소식을 들어보니 오케스트라 연주와 같이 본인의 취미를 살려 몰입했던 경험을 적은 분도 있었어요. <br/>
+>
 > 그러니까, 결론은 운동이나 음악, 여행 같은 취미도 괜찮으니 본인이 진짜로 몰입했던 경험을 소개하는게 더 좋은 방향인 것 같다는 생각입니다.
 
 <br/>
@@ -113,7 +110,7 @@ image: assets/images/thumbnail/woowa-course.png
 적어도 나에겐 그림은 하루아침에 뚝딱 잘 그려지는건 아니였기 때문에 비슷한 그림을 여러 번 그리더라도 변화는 그 속에서 아주 조금씩 이루어졌다. 그림을 좋아하게 된 순간부터 한장이라도 꾸준히 그리는 것이 중요하다는걸 체감했기에 프로그래밍을 하며 당장에 실력이 늘지 않아 답답한 순간에도 조금씩 발전할 것이라는 믿음으로 이겨낼 수 있었던 것 같다.
 
 <br/>
-<p style="color:lightsalmon;font-size:20px; font-weight:bold;">
+<p style="color:lightsalmon;font-size:40px; font-weight:bold;">
 
 3. 프리코스 목표 설정 (1000자 이내)
 
