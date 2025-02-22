@@ -138,46 +138,47 @@ image: assets/images/thumbnail/woowa-course.png
    - 사실 이건 아직도 헷갈리는 부분인 것 같다. 내가 자주 써온 프로그래밍 방식은 함수 중심의 절차프로그래밍 방식이였는데 이번 미션에서는 class와 new를 통해 객체지향방식으로 많이들 사용했었다. 스터디에서 얘기를 꺼내봤을땐 **javascript도 객체지향적이지만 다만 여기에 프로토타입이라는 독특한 시스템이 포함된게 아닐까** , 하는 얘기를 들었지만.. ~~사실 아직 잘 모르겠다..~~
 
 5. **[ from 대희 ]**
+
    - 대희와의 코드에서 배운점을 조금 소개하려 한다. 대희의 경우 Input을 구조를 아래와 같이 사용했다.
 
-```javascript
+   ```javascript
 
- //input.js
- const Input = (() => {
-    class Input {
-       #input;
+   //input.js
+   const Input = (() => {
+      class Input {
+         #input;
 
-       constructor(input) {
-          this.#input = input;
-       }
-       ...
+         constructor(input) {
+            this.#input = input;
+         }
+         ...
 
-       static async readInput(msg) {
-          ...
-          return new Input(input);
-       }
+         static async readInput(msg) {
+            ...
+            return new Input(input);
+         }
 
-       parseCarNames(){}
-       ...
+         parseCarNames(){}
+         ...
 
-    }
+      }
 
-    return {
-       readInput: Input.readInput
-    };
- })();
+      return {
+         readInput: Input.readInput
+      };
+   })();
 
- //index.js
- async getCars() {
-    const input = await Input.readInput();
-    const carNames = input.parseCarNames();
-    ...
- }
-```
+   //index.js
+   async getCars() {
+      const input = await Input.readInput();
+      const carNames = input.parseCarNames();
+      ...
+   }
+   ```
 
-처음에는 이런 방식이 조금 생소해서 왜 이렇게 코드를 작성했는지 물어봤는데 대희는 Input의 역할을 제한하기 위해서 위와 같이 작성했다고 했다.
-<br/> 예를들어보자면 대희가 생각한 Input은 사용자의 입력을 받고, 입력값을 해석하는 범위까지라고 생각을 했다고 한다. 그래서 개발자를 포함한 누군가가 `new Input("adsf")` 와 같은 방식으로 생성하게 된다면 사용자의 입력이 아닌, 개발자가 직접 값을 생성하는 형태가 되기 때문에 **Input의 객체를 생성하지 않기 위해** 위의 방식을 사용했다고 했다.
-<br/> 위의 방식은 `클로저 기법`을 사용한 것으로, static으로 선언한 함수를 먼저 호출하고 Input 클래스를 return 하는 방식으로 사용된 것이라고 생각하면 된다. (진짜 굉장한 방법이야..)
+   - 처음에는 이런 방식이 조금 생소해서 왜 이렇게 코드를 작성했는지 물어봤는데 대희는 Input의 역할을 제한하기 위해서 위와 같이 작성했다고 했다.
+   - 예를들어보자면 대희가 생각한 Input은 사용자의 입력을 받고, 입력값을 해석하는 범위까지라고 생각을 했다고 한다. 그래서 개발자를 포함한 누군가가 `new Input("adsf")` 와 같은 방식으로 생성하게 된다면 사용자의 입력이 아닌, 개발자가 직접 값을 생성하는 형태가 되기 때문에 **Input의 객체를 생성하지 않기 위해** 위의 방식을 사용했다고 했다.
+     <br/> 위의 방식은 `클로저 기법`을 사용한 것으로, static으로 선언한 함수를 먼저 호출하고 Input 클래스를 return 하는 방식으로 사용된 것이라고 생각하면 된다. (진짜 굉장한 방법이야..)
 
 <div style="text-align: center;">
   <img src="../assets/images/image/woowa7-review2/secondMission.png" alt="2주차 미션 마무리" style="width: 50%;"/>
@@ -195,6 +196,8 @@ image: assets/images/thumbnail/woowa-course.png
 
 **3주차 공부한 내용**
 
+---
+
 확실히, 3주차쯤 되니 미션 난이도가 점점 올라가는게 느껴졌다. 요구사항도 더 많아지고 기능도 복잡해져서 공부에 투자해야 하는 시간이 꽤나 많아졌다.
 1,2주차 피드백을 바탕으로 공부한 내용은 다음과 같다.
 
@@ -210,6 +213,8 @@ image: assets/images/thumbnail/woowa-course.png
 
 **피드백**
 
+---
+
 1. **class의 역할 분리**
 
    - `UserLottoInfo`라는 클래스가 정확히 어떤 것을 다루는지 알기 어렵다는 피드백을 받았다. `Info`라는 단어에 모든 걸 함축시킨 것 같은 느낌이 들고, 실제로도 class안에 많은 변수가 존재해서 수정이 필요할 것 같다는 피드백을 받았다. <br/> class의 역할을 분리하는건 늘 어려운 일인 것 같다. 초반에 계획했던 의도는 `UserLottoInfo`라는 클래스가 `Lotto`라는 객체를 이용할 수 있도록 만들고 싶었는데 너무 많은 역할을 부여하게 된 것 같다는 생각이 든다.
@@ -219,7 +224,8 @@ image: assets/images/thumbnail/woowa-course.png
    - 접두어를 공통으로 `print~()`를 갖는 함수들이 어떤건 반환값 없이 동작하고, 어떤건 반환값이 존재하는 건 통일성이 없다고 생각한다. 반환값이 존재하는 print 접두어를 갖는 함수명을 일관되게 수정하는게 좋을 것 같다. <br/>
      그리고 `is~()` 이렇게 시작하는 명칭은 보통 반환값이 boolean인 경우가 많다. 따라서 boolean 값을 반환하는 것이 아닌, 에러처리에 사용되는 함수라면 `throwErrorIfNotNumber` 와 같은 경우로 에러를 던진다는 표현이 있으면 더 좋을 것 같다.
 
-3. print 관련 함수가 class 내부의 모든 변수를 출력하는 느낌이 강하게 든다. 오히려 userLotto 내부에 출력하는 함수를 종속시킨다면 내부 변수를 꺼내는 get 함수들을 없앨 수 있어서 클래스 관점이랑도 잘 맞을 것 같다.
+3. **class의 변수 값 가져오기**
+   - print 관련 함수가 class 내부의 모든 변수를 출력하는 느낌이 강하게 든다. 오히려 userLotto 내부에 출력하는 함수를 종속시킨다면 내부 변수를 꺼내는 get 함수들을 없앨 수 있어서 클래스 관점이랑도 잘 맞을 것 같다.
 
 <div style="text-align: center;">
   <img src="../assets/images/image/woowa7-review2/thridMission.png" alt="3주차 미션 마무리" style="width: 50%;"/>
@@ -242,6 +248,9 @@ image: assets/images/thumbnail/woowa-course.png
 2. test 코드의 파라미터 형식을 통일하기
    - test 코드를 작성할 때 꼭 기억해야겠다고 생각된 부분이다. 바로 파라미터 형식을 통일하지 못한 점.. 즉, 어떤 test 코드의 함수에선 객체 형식으로 값을 받아오고 있었고, 어떤 test 코드에선 원시 타입 그 자체로 값을 받아오고 있어서 초반에는 어떤 문제가 생길지 잘 몰랐었다.
      <br/> 문제가 발생한건 각각 작은 단위의 함수들을 모아 하나의 기능을 하는 함수를 만들 때 서로 파라미터 전달 값이 다르니 **파라미터 형식을 통일**하는데 꽤나 많은 시간이 소요된 점이 아쉬웠다.
+
+<br/>
+<br/>
 
 # 4. 코딩 테스트, 그리고 합격
 
