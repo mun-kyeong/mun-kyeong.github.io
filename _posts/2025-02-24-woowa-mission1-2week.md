@@ -3,7 +3,7 @@ layout: post
 title: "우테코 1단계 2주차"
 author: munkyeong
 categories: [woowa-mission1]
-image: assets/images/thumbnail/woowa-course.png
+image: assets/images/thumbnail/0214_racingCar.png
 ---
 
 > 요약
@@ -104,5 +104,3 @@ input의 값을 전송해야 할 때 `<form>` 태그를 사용하기보다 `addE
    - [form 태그 쓰장](https://velog.io/@rla0591/HTML-Form-%ED%83%9C%EA%B7%B8%EC%9D%98-%ED%95%84%EC%9A%94%EC%84%B1%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)
 
 **form 태그**
-
--
