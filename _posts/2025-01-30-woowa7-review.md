@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "우테코 지원동기 및 지원서 작성"
+title: "[우테코] 2025 7기 프론트엔드 지원동기 지원서 작성"
 author: munkyeong
 categories: [woowa7]
 image: assets/images/thumbnail/woowa-course.png
 ---
 
-> 요약 <br/>
-> 우아한 테크코스 최종 합격 과정 및 회고글입니다. <br/>
+> 요약 <br/> > [ 우아한 테크코스 ] 7기 프론트엔드 최종 합격 과정 및 회고글입니다. <br/>
 > 우테코 지원 동기 및 지원서 작성에 대한 제 이야기를 담았습니다.
 
 # 0. Intro
