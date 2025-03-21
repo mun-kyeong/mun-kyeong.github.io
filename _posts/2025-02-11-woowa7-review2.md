@@ -78,7 +78,7 @@ image: assets/images/thumbnail/woowa-course.png
 - 다만, 아쉬웠던 점으로는 PR 리뷰를 내가 많이 진행하지 못했던 점과 **처음보는 JUnit test를 사용해보지 않고 바로 제출**해버린 점이다. 도전을 망설이지 말아야 한다고 늘 생각하지만, 새로운 환경에 적응하려고 마음먹는데 까지는 조금은 시간이 걸리는 것 같다. <br/> 미션지에서도 JUnit test를 활용해보라고 소개를 해주었지만 PR을 마무리하고 다른 사람들이 활용한 JUnit 코드를 보고 나서야 JUnit test를 소개해준 의도를 이해했던 것 같다.
 
 <div style="text-align: center;">
-  <img src="../assets/images/image/woowa7-review2/firstMission.png" alt="1주차 미션 마무리" style="width: 50%;"/>
+  <img src="../assets/images/blog/woowa7-review2/firstMission.png" alt="1주차 미션 마무리" style="width: 50%;"/>
 </div>
 
 <br/>
@@ -181,7 +181,7 @@ image: assets/images/thumbnail/woowa-course.png
      <br/> 위의 방식은 `클로저 기법`을 사용한 것으로, static으로 선언한 함수를 먼저 호출하고 Input 클래스를 return 하는 방식으로 사용된 것이라고 생각하면 된다. (진짜 굉장한 방법이야..)
 
 <div style="text-align: center;">
-  <img src="../assets/images/image/woowa7-review2/secondMission.png" alt="2주차 미션 마무리" style="width: 50%;"/>
+  <img src="../assets/images/blog/woowa7-review2/secondMission.png" alt="2주차 미션 마무리" style="width: 50%;"/>
 </div>
 
 <br/>
@@ -228,7 +228,7 @@ image: assets/images/thumbnail/woowa-course.png
    - print 관련 함수가 class 내부의 모든 변수를 출력하는 느낌이 강하게 든다. 오히려 userLotto 내부에 출력하는 함수를 종속시킨다면 내부 변수를 꺼내는 get 함수들을 없앨 수 있어서 클래스 관점이랑도 잘 맞을 것 같다.
 
 <div style="text-align: center;">
-  <img src="../assets/images/image/woowa7-review2/thridMission.png" alt="3주차 미션 마무리" style="width: 50%;"/>
+  <img src="../assets/images/blog/woowa7-review2/thridMission.png" alt="3주차 미션 마무리" style="width: 50%;"/>
 </div>
 
 ## 4주차 : javascript-convenience-store
@@ -263,7 +263,7 @@ image: assets/images/thumbnail/woowa-course.png
 
 그리고 결과는,, 정말 감사하게도
 
-![우아한 테크코스 최종 결과](../assets/images/image/woowa7-review2/woowaFinal.png)
+![우아한 테크코스 최종 결과](../assets/images/blog/woowa7-review2/woowaFinal.png)
 
 합격했습니다 ㅠㅠ 참 부족한 시간과 나였음에도 불구하고 끝까지 포기하지 않게 도와준 주변 사람들과, 흥미를 잃지 않고 끝까지 함께 해준 대희에게도 참 고맙습니다. 이런 기회를 허락해주신 하나님께도 정말 감사했고, 조금 늦은 후기이긴 하지만 그럼에도 소식 듣고 축하해준 모든 사람들에게 다시한번 고맙다는 인사를 남깁니다.
 
