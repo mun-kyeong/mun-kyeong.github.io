@@ -33,7 +33,7 @@ image: assets/images/thumbnail/woowa-course.png
 
 # 2. 서류접수 (자소서)
 
-![우아한 테크코스 이미지](/assets/images/blog/woowa7-review/woowa-intro.png)
+![우아한 테크코스 이미지](/assets/images/blog/2025-01-30-woowa7-review/woowa-intro.png)
 
 위에 사진은 우테코 홍보지인데 아마 다들 학교 다니면서 한번씩은 보지 않았나 싶다. 저기 가운데 그려진 친구가 "행성이"인데 포스터를 잘 보면 행성이가 거울로 자신의 모습을 보고 있는걸 확인할 수 있다.
 
@@ -63,7 +63,7 @@ image: assets/images/thumbnail/woowa-course.png
 
 </p>
 
-![첫번째 지원서 항목](/assets/images/blog/woowa7-review/first-apply.png)
+![첫번째 지원서 항목](/assets/images/blog/2025-01-30-woowa7-review/first-apply.png)
 
 <br/>
 
@@ -84,7 +84,7 @@ image: assets/images/thumbnail/woowa-course.png
 
 </p>
 
-![두번째 지원서 항목](/assets/images/blog/woowa7-review/second-apply.png)
+![두번째 지원서 항목](/assets/images/blog/2025-01-30-woowa7-review/second-apply.png)
 
 <br/>
 
@@ -115,7 +115,7 @@ image: assets/images/thumbnail/woowa-course.png
 
 </p>
 
-![세번째 지원서 항목](/assets/images/blog/woowa7-review/third-apply.png)
+![세번째 지원서 항목](/assets/images/blog/2025-01-30-woowa7-review/third-apply.png)
 
 <br/>
 

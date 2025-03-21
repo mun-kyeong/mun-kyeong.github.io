@@ -133,7 +133,7 @@ git블로그 환경 세팅을 포함해서 변경된 UI 확인도 할겸 commit 
 
 이런식으로 변경을 했었는데 알고보니 `<code>` 태그로 감싸져있는 블록이 총 2개가 있었다. 아래 사진과 같이 백틱으로 감싸져있는 **코드태그(1)** 부분과 전체 코드를 감싸는 **코드블록(2)** 부분이다.
 
-![코드 요소검사 사진](/assets/images/blog/start-gitblog/codeElement.png)
+![코드 요소검사 사진](/assets/images/blog/2024-07-24-start-gitblog/codeElement.png)
 
 <br/>
 
@@ -141,13 +141,13 @@ git블로그 환경 세팅을 포함해서 변경된 UI 확인도 할겸 commit 
 
 코드 태그의 경우 요소검사를 통해 아래 사진과 같이 `<code>`라는 태그와 `class="language-plaintext highlighter-rouge"` 이렇게 class 속성이 추가되어있는 것을 확인할 수 있다.
 
-![코드태그 요소검사](/assets/images/blog/start-gitblog/code-tag.png)
+![코드태그 요소검사](/assets/images/blog/2024-07-24-start-gitblog/code-tag.png)
 
 1. **코드 블록 부분**
 
 코드 블록의 경우 class 추가 없이 `<code>` 태그로만 감싸져있는 것을 확인할 수 있다.
 
-![코드블럭 요소검사](/assets/images/blog/start-gitblog/code-block.png)
+![코드블럭 요소검사](/assets/images/blog/2024-07-24-start-gitblog/code-block.png)
 
 위의 1,2번 요소검사를 통해 내가 적용하고 싶은 코드 태그 부분에만 css 속성을 덮어씌우고 싶다면 아래와 같이 css 파일을 작성하면 된다.
 
