@@ -3,7 +3,7 @@ layout: post
 title: "우테코 1단계 2주차"
 author: munkyeong
 categories: [woowa-mission1]
-image: assets/images/thumbnail/woowa-course.png
+image: assets/images/thumbnail/0214_racingCar.png
 ---
 
 > 요약
