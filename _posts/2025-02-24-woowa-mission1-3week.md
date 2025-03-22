@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "우테코 1단계 2주차"
-author: munkyeong
-categories: [woowa-mission1]
+title: "[우테코] level-1 / mission3 회고"
+author: kangoll
+categories: [woowa-mission1, woowaCourse]
 image: assets/images/thumbnail/0214_racingCar.png
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[우테코] 2025 7기 프론트엔드 프리코스 / 최종코테"
-author: munkyeong
-categories: [woowa7]
+author: kangoll
+categories: [woowaCourse]
 image: assets/images/thumbnail/woowa-course.png
 ---
 
