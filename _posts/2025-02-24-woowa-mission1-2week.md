@@ -29,7 +29,7 @@ image: assets/images/thumbnail/0214_racingCar.png
   - [이번주 키워드](#이번주-키워드)
     - [🔑 K1 ) 잘 모듈화한 코드는 어떤 특성을 가지고 있을까?](#-k1--잘-모듈화한-코드는-어떤-특성을-가지고-있을까)
     - [🔑 K2 ) 프로토타입 체인, **proto** 와 prototype](#-k2--프로토타입-체인-proto-와-prototype)
-    - [🔑 K3 ) 태그, DocumentFragment](#-k3---태그-documentfragment)
+    - [🔑 K3 ) `template` 태그, DocumentFragment](#-k3--template-태그-documentfragment)
     - [🔑 K4 ) DOM 변경을 했을 때 일어나는 일들](#-k4--dom-변경을-했을-때-일어나는-일들)
     - [🔑 K5 ) bind(this) vs 화살표 함수의 차이](#-k5--bindthis-vs-화살표-함수의-차이)
 
@@ -291,7 +291,7 @@ p1.sayHello();
 
 <br/>
 
-#### 🔑 K3 ) <template> 태그, DocumentFragment
+#### 🔑 K3 ) `template` 태그, DocumentFragment
 
 **<template> 태그**
 `<template>` 태그는 브라우저에 렌더링 되지 않는 HTML 조각을 정의하는 용도로 사용된다. HTML 안에는 존재하지만 화면에 나타나지 않으며 JS 조작을 통해 필요할 때 DOM으로 삽입 가능하다. 간단히 말해 **콘텐츠 조각을 나중에 사용하기 위해 담아놓는 컨테이너**라고 생각하면 된다.

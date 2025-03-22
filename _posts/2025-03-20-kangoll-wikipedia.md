@@ -18,24 +18,25 @@ featured: true
 
 ## 📚 목차
 
+- [📚 목차](#-목차)
 - [JavaScript](#javascript)
-  - [객체지향적인 코드를 작성하자](#객체지향적인-코드를-작성하자)
-    - [class를 사용하는 기준 (2025.03)](#class를-사용하는-기준-202503)
-    - [선언형 프로그래밍으로 작성하자. (2025.03)](#선언형-프로그래밍으로-작성하자-202503)
-  - [DOM 의 성능 최적화](#dom-의-성능-최적화)
-    - [DocumentFragment를 사용하자. (2025.03)](#documentfragment를-사용하자-202503)
+- [객체지향적인 코드를 작성하자](#객체지향적인-코드를-작성하자)
+  - [class를 사용하는 기준 (2025.03)](#class를-사용하는-기준-202503)
+  - [선언형 프로그래밍으로 작성하자. (2025.03)](#선언형-프로그래밍으로-작성하자-202503)
+- [DOM 의 성능 최적화](#dom-의-성능-최적화)
+  - [DocumentFragment를 사용하자. (2025.03)](#documentfragment를-사용하자-202503)
 - [HTML, CSS](#html-css)
-  - [자주 잊어버리는 문법들](#자주-잊어버리는-문법들)
-    - [\[html\] html 토글 태그 (2025.03)](#html-html-토글-태그-202503)
-    - [\[html\] addEventListner 대신 `<form>` 태그를 사용하자 (2025.03)](#html-addeventlistner-대신-form-태그를-사용하자-202503)
-    - [\[css\] `inset` 속성으로 css 속성을 간단히 줄 수 있다. (2025.03)](#css-inset-속성으로-css-속성을-간단히-줄-수-있다-202503)
+- [자주 잊어버리는 문법들](#자주-잊어버리는-문법들)
+  - [\[html\] html 토글 태그 (2025.03)](#html-html-토글-태그-202503)
+  - [\[html\] addEventListner 대신 `<form>` 태그를 사용하자 (2025.03)](#html-addeventlistner-대신-form-태그를-사용하자-202503)
+  - [\[css\] `inset` 속성으로 css 속성을 간단히 줄 수 있다. (2025.03)](#css-inset-속성으로-css-속성을-간단히-줄-수-있다-202503)
 
 ---
 
 <br/>
 <br/>
 
-# JavaScript
+## JavaScript
 
 ## 객체지향적인 코드를 작성하자
 
@@ -80,7 +81,7 @@ document.querySelector("ul").appendChild(fragment);
 <br/>
 <br/>
 
-# HTML, CSS
+## HTML, CSS
 
 ## 자주 잊어버리는 문법들
 
