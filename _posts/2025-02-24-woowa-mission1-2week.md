@@ -57,14 +57,17 @@ image: assets/images/thumbnail/0214_racingCar.png
 
 ---
 
-<목차>
+[📌 Q1 ) 명령형보다 선언형 프로그래밍을 지향해라?](#-q1--명령형보다-선언형-프로그래밍을-지향해라)
 
-- 📌 Q1 ) 명령형보다 선언형 프로그래밍을 지향해라?
-- 📌 Q2 ) HTML의 `<form>` 태그를 꼭 사용해야 할까
-- 📌 Q3 ) class 필드의 변수가 너무 많을땐?
-- 📌 Q4) `inset` 속성으로 css 관리를 간단히!
-- 📌 Q5) `type="text"`와 `type="number"`의 차이
-- 📌 Q6) css 속성이 중복되었을 때 뭐가 우선이 될까
+[📌 Q2 ) HTML의 `<form>` 태그를 꼭 사용해야 할까](#-q2--html의-form-태그를-꼭-사용해야-할까)
+
+[📌 Q3 ) class 필드의 변수가 너무 많을땐?](#-q3--class-필드의-변수가-너무-많을땐)
+
+[📌 Q4) `inset` 속성으로 css 관리를 간단히!](#-q4-inset-속성으로-css-관리를-간단히)
+
+[📌 Q5) `type="text"`와 `type="number"`의 차이](#-q5-typetext와-typenumber의-차이)
+
+[📌 Q6) css 속성이 중복되었을 때 뭐가 우선이 될까](#-q6-css-속성이-중복되었을-때-뭐가-우선이-될까)
 
 ---
 
@@ -205,13 +208,15 @@ inset: 0px 0px 0px 0px;
 
 ---
 
-<목차>
+[🔑 K1 ) 잘 모듈화한 코드는 어떤 특성을 가지고 있을까?](#-k1--잘-모듈화한-코드는-어떤-특성을-가지고-있을까)
 
-- 🔑 K1 ) 잘 모듈화한 코드는 어떤 특성을 가지고 있을까?
-- 🔑 K2 ) 프로토타입 체인, **proto** 와 prototype
-- 🔑 K3 ) 프로토타입 체인, **proto** 와 prototype
-- 🔑 K4 ) DOM 변경을 했을 때 일어나는 일들
-- 🔑 K5 ) bind(this) vs 화살표 함수의 차이
+[🔑 K2 ) 프로토타입 체인, **proto** 와 prototype](#-k2--프로토타입-체인-proto-와-prototype)
+
+[🔑 K3 ) 태그, DocumentFragment](#-k3---태그-documentfragment)
+
+[🔑 K4 ) DOM 변경을 했을 때 일어나는 일들](#-k4--dom-변경을-했을-때-일어나는-일들)
+
+[🔑 K5 ) bind(this) vs 화살표 함수의 차이](#-k5--bindthis-vs-화살표-함수의-차이)
 
 ---
 
