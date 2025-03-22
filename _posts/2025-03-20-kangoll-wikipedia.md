@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "kangoll"
+title: "kangoll의 위키문서"
 author: kangoll
 categories: [wikipedia]
 image: assets/images/thumbnail/0214_racingCar.png
+featured: true
 ---
 
 > 요약 )

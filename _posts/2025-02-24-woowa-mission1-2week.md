@@ -2,7 +2,7 @@
 layout: post
 title: "[우테코] level-1 / mission2 회고"
 author: kangoll
-categories: [woowa-mission1]
+categories: [woowa-mission1, woowaCourse]
 image: assets/images/thumbnail/0214_racingCar.png
 ---
 
