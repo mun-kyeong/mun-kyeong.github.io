@@ -293,7 +293,7 @@ p1.sayHello();
 
 #### 🔑 K3 ) `template` 태그, DocumentFragment
 
-**<template> 태그**
+**`template` 태그**
 `<template>` 태그는 브라우저에 렌더링 되지 않는 HTML 조각을 정의하는 용도로 사용된다. HTML 안에는 존재하지만 화면에 나타나지 않으며 JS 조작을 통해 필요할 때 DOM으로 삽입 가능하다. 간단히 말해 **콘텐츠 조각을 나중에 사용하기 위해 담아놓는 컨테이너**라고 생각하면 된다.
 
 ```html
