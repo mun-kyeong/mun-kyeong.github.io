@@ -33,7 +33,7 @@ pre {
   /* border: #e3edf3 1px solid; */
   width: 100%;
   padding: 7px;
-  font-family: "BMJUA", "intelone-mono-font-family-regular", monospace,
+  font-family: "BMHANNAAir", "intelone-mono-font-family-regular", monospace,
     sans-serif;
   font-size: 0.9rem;
   white-space: pre;
@@ -312,7 +312,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-  font-family: "Hanna", "BMJUA", "Righteous";
+  font-family: "BMJUA", "BMHANNAAir", "Righteous";
 }
 
 .mainheading h1.posttitle {
@@ -337,7 +337,7 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-  font-family: "BMJUA";
+  font-family: "BMHANNAAir";
   font-size: 1rem;
   line-height: 1.5;
   color: #494e52;
@@ -692,21 +692,21 @@ ul.tags li a:hover {
 .h1,
 .h2,
 .h3,
+.h4,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "BMJUA", -apple-system,
     "intelone-mono-font-family-regular" system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.h4,
 .h5,
 .h6,
-h4,
 h5,
 h6 {
-  font-family: "Hanna", "BMJUA", -apple-system,
+  font-family: "BMHANNAAir", -apple-system,
     "intelone-mono-font-family-regular" system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -739,7 +739,7 @@ h6 {
 }
 
 .layout-page .article-post {
-  font-family: "BMJUA", -apple-system, BlinkMacSystemFont,
+  font-family: "BMHANNAAir", -apple-system, BlinkMacSystemFont,
     "intelone-mono-font-family-regular", "Segoe UI", Roboto, "Helvetica Neue",
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
@@ -905,7 +905,7 @@ iframe {
   line-height: 1;
   padding: 2px 3px;
   width: 150px;
-  font-family: "BMJUA", Arial;
+  font-family: "BMHANNAAir", Arial;
   text-align: center;
   border-radius: 3px;
   transition: all 0.4s;
@@ -963,6 +963,6 @@ code.language-plaintext {
 
 /* // highlighter-rouge 클래스가 적용된 code 요소 */
 code.highlighter-rouge {
-  font-family: "BMJUA", monospace;
+  font-family: "BMHANNAAir", monospace;
   color: #5085cc;
 }

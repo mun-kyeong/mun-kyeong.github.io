@@ -19,20 +19,20 @@
   font-style: normal;
 }
 
-//BMJUA -   font-family: "Hanna";
+//BMHANNAAir -   font-family: "BMJUA";
 @import url("//fonts.googleapis.com/earlyaccess/hanna.css");
 
-// @font-face {
-//   font-family: "BMJUA";
-//   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMJUA.woff")
-//     format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "BMHANNAAir";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "BMJUA";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff")
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMHANNAAir.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
