@@ -3,7 +3,7 @@ layout: post
 title: "kangoll의 위키문서"
 author: kangoll
 categories: [wikipedia]
-image: assets/images/thumbnail/0214_racingCar.png
+image: assets/images/thumbnail/woowa-racingCar.png
 featured: true
 ---
 
