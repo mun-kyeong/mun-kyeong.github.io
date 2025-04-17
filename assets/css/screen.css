@@ -343,6 +343,7 @@ span.post-read-more a:hover {
   color: #494e52;
   letter-spacing: 0.5px;
 }
+
 .article-post h1,
 h2 {
   color: rgba(0, 0, 0, 0.9);
@@ -689,6 +690,35 @@ ul.tags li a:hover {
   margin-bottom: 1.5rem;
 }
 
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.125rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
 .h1,
 .h2,
 .h3,
@@ -723,13 +753,16 @@ h6 {
 .article-post h4,
 .article-post h5,
 .article-post h6 {
+  font-family: "BMJUA", -apple-system,
+    "intelone-mono-font-family-regular" system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
 .article-post p strong {
   font-family: "Pretendard-Bold";
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .article-post img.shadow {
