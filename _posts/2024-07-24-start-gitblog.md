@@ -50,8 +50,8 @@ CSS가 적용되지 않았던 이유는 브라우저가 캐싱된 CSS 파일을 
 
 ```scss
 @font-face {
-  font-family: "BMHANNAAir";
-  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/BMHANNAAir.woff")
+  font-family: "BMJUA";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/BMJUA.woff")
     format("woff");
   font-weight: 300;
   font-style: normal;
@@ -63,7 +63,7 @@ CSS가 적용되지 않았던 이유는 브라우저가 캐싱된 CSS 파일을 
 ```css
 .article-post {
   /* 수정된 부분 */
-  font-family: "BMHANNAAir";
+  font-family: "BMJUA";
   font-size: 1.1rem;
   line-height: 1.84;
   color: rgba(0, 0, 0, 0.8);
@@ -160,7 +160,7 @@ code.language-plaintext {
 }
 
 code.highlighter-rouge {
-  font-family: "BMHANNAAir", monospace;
+  font-family: "BMJUA", monospace;
   color: #5085cc;
 }
 ```

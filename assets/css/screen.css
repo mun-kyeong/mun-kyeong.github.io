@@ -33,7 +33,7 @@ pre {
   /* border: #e3edf3 1px solid; */
   width: 100%;
   padding: 7px;
-  font-family: "BMHANNAAir", "intelone-mono-font-family-regular", monospace,
+  font-family: "BMJUA", "intelone-mono-font-family-regular", monospace,
     sans-serif;
   font-size: 0.9rem;
   white-space: pre;
@@ -312,7 +312,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-  font-family: "Hanna", "BMHANNAAir", "Righteous";
+  font-family: "Hanna", "BMJUA", "Righteous";
 }
 
 .mainheading h1.posttitle {
@@ -337,7 +337,7 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-  font-family: "BMHANNAAir";
+  font-family: "BMJUA";
   font-size: 1rem;
   line-height: 1.5;
   color: #494e52;
@@ -695,7 +695,7 @@ ul.tags li a:hover {
 h1,
 h2,
 h3 {
-  font-family: "BMHANNAAir", -apple-system,
+  font-family: "BMJUA", -apple-system,
     "intelone-mono-font-family-regular" system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -706,7 +706,7 @@ h3 {
 h4,
 h5,
 h6 {
-  font-family: "Hanna", "BMHANNAAir", -apple-system,
+  font-family: "Hanna", "BMJUA", -apple-system,
     "intelone-mono-font-family-regular" system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -739,7 +739,7 @@ h6 {
 }
 
 .layout-page .article-post {
-  font-family: "BMHANNAAir", -apple-system, BlinkMacSystemFont,
+  font-family: "BMJUA", -apple-system, BlinkMacSystemFont,
     "intelone-mono-font-family-regular", "Segoe UI", Roboto, "Helvetica Neue",
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
@@ -905,7 +905,7 @@ iframe {
   line-height: 1;
   padding: 2px 3px;
   width: 150px;
-  font-family: "BMHANNAAir", Arial;
+  font-family: "BMJUA", Arial;
   text-align: center;
   border-radius: 3px;
   transition: all 0.4s;
@@ -963,6 +963,6 @@ code.language-plaintext {
 
 /* // highlighter-rouge 클래스가 적용된 code 요소 */
 code.highlighter-rouge {
-  font-family: "BMHANNAAir", monospace;
+  font-family: "BMJUA", monospace;
   color: #5085cc;
 }
