@@ -261,7 +261,7 @@ e2e 테스트를 위해서 Cypress를 사용할 수 있다.
 
 #### 🔑 K3 ) TypeScript
 
-([우테코] level-1 / TypeScript에 관하여)[]
+[[우테코] level-1 / TypeScript에 관하여](https://mun-kyeong.github.io//woowa-mission1-3week-TS/)
 TypeScript에 대한 구체적인 내용은 위의 블로그 글에 업로드 했으니 참고해도 좋을 것 같다!
 
 TypeScript를 왜 쓰냐고 한다면 JS는 **동적 타입 시스템**이기 때문에 **런타임때 오류 검사**를 하지만 TS는 **정적 타입 시스템**이기 때문에 **컴파일때 오류 검사**를 진행하기 때문인 것 같다.
