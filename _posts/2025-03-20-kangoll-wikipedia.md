@@ -50,6 +50,9 @@ featured: true
 1. 변경된 상태를 관리하면서 가지고 있어야 한다. => `class` 사용하기
 2. 값을 참조만 하는 경우 => `function`의 props로 받아와도 충분하다
 
+- 왜 상태를 관리할땐 class를 써야할까? 단지 값을 가리기 위함이라면 closer를 사용해도 괜찮지 않을까?
+  - 아직 개인적인 생각이긴 하지만 class가 가독성이 더 좋다고 생각된다. class에서만 사용할 수 있는 상속이라던가 생성자 같은 개념이 있기도 하고. (2025.04.16)
+
 <br/>
 
 #### 선언형 프로그래밍으로 작성하자. (2025.03)
@@ -125,4 +128,5 @@ document.querySelector("ul").appendChild(fragment);
 inset: 0px 0px 0px 0px;
 ```
 
+<br/>
 <br/>
