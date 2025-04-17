@@ -19,11 +19,14 @@
   font-style: normal;
 }
 
+//BMHANNAAir -   font-family: "Hanna";
+@import url("//fonts.googleapis.com/earlyaccess/hanna.css");
+
 @font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+  font-family: "BMHANNAAir";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff")
     format("woff");
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal;
 }
 
