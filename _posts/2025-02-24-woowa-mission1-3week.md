@@ -33,6 +33,7 @@ image: assets/images/thumbnail/woowa-lunch.png
     - [🔑 K2 ) E2E 테스트란?](#-k2--e2e-테스트란)
     - [🔑 K3 ) TypeScript](#-k3--typescript)
     - [🔑 K3 ) YAGNI (You aren't gonna need it)](#-k3--yagni-you-arent-gonna-need-it)
+    - [🔑 K4 ) 읽기 전용으로 만들기](#-k4--읽기-전용으로-만들기)
 
 ---
 
@@ -276,3 +277,86 @@ TypeScript를 왜 쓰냐고 한다면 JS는 **동적 타입 시스템**이기 �
 #### 🔑 K3 ) YAGNI (You aren't gonna need it)
 
 YAGNI는 프로그래머가 필요하다고 간주할 때까지 기능을 추가하지 않는 것이 좋다는 XP(익스트림 프로그래밍)의 원칙이다. XP의 창시자는 이를 두고 '실제로 필요할 때 무조건 구현하되, 그저 필요할 것이라고 예상할 때에는 절대 구현하지 말라'고 강조했다.
+
+<br/>
+
+#### 🔑 K4 ) 읽기 전용으로 만들기
+
+- **Object.freeze**
+
+Object.freeze는 JavaScript의 Object 객체에 정의된 정적 메서드로, 객체를 동결(freeze)하여 속성을 **추가, 제거, 변경**할 수 없게 만든다.
+런타임에 실행되며, 동결된 객체의 속성을 변경하려 할 때 `use strict` 모드에서는 TypeError를 발생시키지만, 일반 모드에서는 조용히 실패(silent fail)한다. (에러 발생시키지 않음)
+
+`Object.freeze`는 **Top-level** 수준에서만 동결이 가능하기 때문에 객체 내부에 중첩된 객체가 있을 경우, 해당 내부 객체들도 동결하려면 재귀적으로 `Object.freeze`를 호출해야 한다.
+
+```javascript
+const obj = Object.freeze({
+  outer: {
+    inner: "hello",
+  },
+});
+
+obj.outer = {}; // ❌ 얘는 막힘 (Top level은 freeze 됐기 때문)
+obj.outer.inner = "hi"; // ✅ 이건 바뀐다! (내부 객체는 freeze 안 됐음)
+```
+
+Object.freeze는 아래와 같이 실제로 obj의 속성을 `writable: false`로 바꿔주지만 런타임때 코드가 실행된다.
+
+```javascript
+Object.defineProperty(obj, key, {
+  writable: false,
+  configurable: false,
+});
+```
+
+<br/>
+
+- as const
+
+as const는 객체나 배열의 값을 **리터럴 타입**으로 고정하고, 전체를 **읽기 전용(readonly)**으로 만드는 **TypeScript의 문법**이다.
+
+Object.freeze와 다른점은 2개가 있다.
+
+1. TypeScript의 문법이기 때문에 **컴파일 타임**에 type 오류를 잡을 수 있다.
+2. Object.freeze는 top-level에서만 type 검사를 실행하지만 as const는 중첩 객체의 경우에도 모든 속성을 **readonly** 속성으로 만들어준다.
+
+as const는 Object.freeze처럼 실제로 obj의 속성을 바꿔주지는 않지만 컴파일 시점에 검사를 진행하기 때문에 빠른 피드백을 얻을 수 있다.
+또한 아래 코드와 같이 object가 중첩되어 있는 상황에서도 내부까지 readonly 속성으로 설정한다.
+
+```javascript
+
+const obj = {
+  outer: {
+    inner: "hello"
+  }
+} as const;
+
+obj.outer = {};           // ❌ TS 에러: outer는 readonly
+obj.outer.inner = "hi";   // ❌ TS 에러: inner도 readonly
+
+
+
+```
+
+<br/>
+
+- readonly / `Readonly<Type>`
+
+readonly는 객체의 속성을 읽기 전용으로 지정하는 키워드이며, 주로 인터페이스나 타입 정의에서 사용된다.
+또한 `Readonly<Type>` 유틸리티 타입을 통해 객체 전체를 읽기 전용으로 만들 수도 있다.
+
+주로 객체 안에 있는 props 대상으로 사용한다.
+
+```javascript
+
+function foo(config: {
+    readonly bar: number,
+    readonly bas: number
+}) {
+    // ..
+}
+
+let config = { bar: 123, bas: 123 };
+foo(config);
+// `config`가 변경되지 않는다고 확신할 수 있음 🌹
+```
