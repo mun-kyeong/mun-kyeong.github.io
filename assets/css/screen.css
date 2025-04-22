@@ -13,6 +13,12 @@ License: https://www.wowthemes.net/freebies-license/
   }
 }
 
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .mainheading {
   padding: 1rem 0rem;
 }
@@ -338,9 +344,9 @@ span.post-read-more a:hover {
 
 .article-post {
   font-family: "Pretendard-Regular";
-  font-size: 1rem;
+  font-size: rem;
   line-height: 1.5;
-  color: #494e52;
+  color: #5b5f64;
   letter-spacing: 0.5px;
 }
 
@@ -362,7 +368,7 @@ blockquote {
 
 .article-post p,
 .article-post blockquote {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.8rem 0;
 }
 
 .featured-image {
@@ -998,4 +1004,11 @@ code.language-plaintext {
 code.highlighter-rouge {
   font-family: "Pretendard-Regular", monospace;
   color: #5085cc;
+}
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
