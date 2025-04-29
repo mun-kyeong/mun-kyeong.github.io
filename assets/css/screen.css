@@ -8,8 +8,15 @@ License: https://www.wowthemes.net/freebies-license/
     font-size: 18px;
     color: #666;
   } /* Increase the font size on higher resolutions */
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 993px) {
   .container {
-    max-width: 80%;
+    width: 80%;
   }
 }
 
@@ -1005,10 +1012,4 @@ hr {
   margin-bottom: 1.5rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 100%;
-  }
 }
