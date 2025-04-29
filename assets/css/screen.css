@@ -13,12 +13,6 @@ License: https://www.wowthemes.net/freebies-license/
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    width: 100%;
-  }
-}
-
 .mainheading {
   padding: 1rem 0rem;
 }
@@ -1011,4 +1005,10 @@ hr {
   margin-bottom: 1.5rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
 }
