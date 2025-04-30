@@ -1011,7 +1011,7 @@ hr {
 
 @media (min-width: 993px) {
   .container {
-    width: 90%;
-    max-width: 90%;
+    width: 85%;
+    max-width: 85%;
   }
 }
