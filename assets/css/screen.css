@@ -1006,10 +1006,12 @@ hr {
 
 .container {
   width: 100%;
+  max-width: 100%;
 }
 
 @media (min-width: 993px) {
   .container {
     width: 90%;
+    max-width: 90%;
   }
 }
