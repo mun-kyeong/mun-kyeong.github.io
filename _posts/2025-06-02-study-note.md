@@ -2,7 +2,7 @@
 layout: post
 title: "나만의 학습 노트 제작기"
 author: munkyeong
-categories: [reflection]
+categories: [woowa]
 image: assets/images/thumbnail/default-img.png
 ---
 
@@ -40,7 +40,7 @@ image: assets/images/thumbnail/default-img.png
 
 ---
 
-> ## 📌 시지프 예시
+> **📌 시지프 예시**
 >
 > 레벨2에서 새로운 지식을 배울 때 어떻게 학습했는지 돌아보자 (msw, useReducer, Context API, RTL 등)
 >
@@ -84,13 +84,12 @@ React 공식문서에서 Reducer 관련 문서를 읽고 ContextAPI와 함께 �
 ContextAPI를 사용하게 된 이유는 미션 요구사항을 만족시키기 위함이였던 것 같다.
 
 <br/>
-<br/>
 
 # 2. 학습 방법 개선해보기 (v2)
 
 ---
 
-> ## 📌 시지프 예시
+> **📌 시지프 예시**
 >
 > 자기만의 학습 방법을 세우는 것도 중요하지만, 기본적으로 뇌과학/인지심리학적으로 더 낫다고 알려진 방법들이 존재한다.
 > 그런 reference 를 충분히 조사하며 학습 전략을 세워볼 것이다.
@@ -136,14 +135,11 @@ ContextAPI를 사용하게 된 이유는 미션 요구사항을 만족시키기 
 
 <br/>
 
-<br/>
-<br/>
+# 3. v2 를 적용하여 30분간 학습해보기
 
 ---
 
-# 3. v2 를 적용하여 30분간 학습해보기
-
-> ## 📌 시지프 예시
+> **📌 시지프 예시**
 >
 > - Contextual Learning (목표지향, 문제 해결 중심 학습)
 >   - 이 기술이 문제해결을 위해 꼭 필요한 것이어야 한다. (why)
@@ -213,15 +209,21 @@ ContextAPI를 사용하게 된 이유는 미션 요구사항을 만족시키기 
 
 (이미지는 위와 같은 "Why -> Do -> Review & Refine"의 순환 구조를 나타내는 간단한 다이어그램을 상상하시면 됩니다.)
 
+<br/>
+
 # 4. 학습을 돌아보고 v3 도출해보기
 
 ---
 
 [V2를 적용해서 React-query 공부하기](https://www.notion.so/V2-React-query-2060cf49724a8054a10edd0273a0d407?pvs=21)
 
+<br/>
+
 # 5. 실험 로그
 
-> ## 📌 노트에 실험 로그를 써보자.
+--
+
+> **📌 노트에 실험 로그를 써보자.**
 >
 > 기존 방식과 비교하여 좋았던 점, 더 개선할 수 있는 점을 써보고, 개선안 v3 도출해보자 (10분)
 
