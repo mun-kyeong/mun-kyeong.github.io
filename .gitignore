@@ -1,6 +1,18 @@
-_site
+# 빌드 결과물
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# macOS 시스템 파일
 .DS_Store
+
+# Vim, Emacs 등의 임시 파일
 *.swp
-.sass-cache
-Gemfile.lock
 *~
+*.swo
+
+# Sass 캐시
+.sass-cache/
+
+# Gemfile lock (개인 판단)
+Gemfile.lock
