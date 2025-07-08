@@ -2,7 +2,7 @@
 layout: post
 title: "[우테코] level-1 / mission3 회고"
 author: kangoll
-categories: [woowa-mission1, woowaCourse]
+categories: [woowa-level1, woowaCourse]
 image: assets/images/thumbnail/woowa-lunch.png
 ---
 
