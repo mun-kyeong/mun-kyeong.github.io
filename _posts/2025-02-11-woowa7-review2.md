@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] 2025 7기 프론트엔드 프리코스 / 최종코테"
 author: kangoll
 categories: [woowaCourse]
-image: assets/images/thumbnail/woowa-course.png
+image: assets/images/thumbnail/woowa-pre-course.png
 ---
 
 > 요약 <br/> [ 우아한 테크코스 ] 7기 프론트엔드 최종 합격 과정 및 회고글입니다. <br/>
