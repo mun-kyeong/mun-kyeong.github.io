@@ -3,7 +3,7 @@ layout: post
 title: "우테코-level2 글쓰기"
 author: kangoll
 categories: [woowa]
-image: assets/images/thumbnail/woowa-course.png
+image: assets/images/thumbnail/woowa-writing.png
 ---
 
 > 요약
