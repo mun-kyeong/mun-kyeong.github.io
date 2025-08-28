@@ -2,7 +2,7 @@
 layout: post
 title: "[우테코] level-2 / 회고-1"
 author: kangoll
-categories: [woowa-level2, woowaCourse]
+categories: [woowaCourse]
 image: assets/images/thumbnail/woowa-level2-mission2.png
 ---
 

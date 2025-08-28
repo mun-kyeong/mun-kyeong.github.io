@@ -2,7 +2,7 @@
 layout: post
 title: "gitBlog 작성 시 마주한 문제와 해결 방법 "
 author: munkyeong
-categories: [project, etc]
+categories: [etc]
 image: assets/images/thumbnail/gitblog.png
 featured: true
 ---
