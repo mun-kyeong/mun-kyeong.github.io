@@ -3,7 +3,7 @@ layout: post
 title: "나만의 학습 노트 제작기"
 author: munkyeong
 categories: [woowaCourse]
-image: assets/images/thumbnail/woowa-course.png
+image: assets/images/thumbnail/default-img.png
 ---
 
 > 요약

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[우테코] level-3 / 트러블슈팅 기술회고 - 1"
+title: "[우테코] level-3 / 트러블슈팅"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
 image: assets/images/thumbnail/default-img.png
