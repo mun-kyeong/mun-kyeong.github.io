@@ -2,7 +2,7 @@
 layout: post
 title: "[우테코] level-1 / TypeScript"
 author: kangoll
-categories: [woowaCourse]
+categories: [woowaCourse, tech-reflection]
 image: assets/images/thumbnail/woowa-racingCar.png
 ---
 

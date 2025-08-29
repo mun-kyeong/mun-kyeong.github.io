@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "[우테코] level-2 / 기술 회고-1"
+title: "[우테코] level-3 / 트러블슈팅 기술회고 - 1"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/woowa-level2-mission2.png
+image: assets/images/thumbnail/default-img.png
 ---
 
-> 요약
-> 우테코 미션을 수행하면서 기억하고 싶은 부분들을 정리합니다.
+> 요약 <br/>
 
 <br/>
 <br/>
