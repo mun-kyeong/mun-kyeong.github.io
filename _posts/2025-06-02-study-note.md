@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "나만의 학습 노트 제작기"
+title: "[우테코] level-2 / 나만의 학습 노트 제작기"
 author: munkyeong
 categories: [woowaCourse]
 image: assets/images/thumbnail/default-img.png

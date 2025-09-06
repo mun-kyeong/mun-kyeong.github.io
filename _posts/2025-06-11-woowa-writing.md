@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "우테코-level2 글쓰기"
+title: "[우테코] level2 / 나를 돌아보는 글쓰기"
 author: kangoll
 categories: [woowaCourse]
 image: assets/images/thumbnail/default-img.png

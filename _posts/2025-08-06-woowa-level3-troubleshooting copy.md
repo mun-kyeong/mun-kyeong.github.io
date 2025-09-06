@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[우테코] level-3 / 트러블슈팅"
+title: "[우테코] level-3 / S3·CloudFront 트러블슈팅"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
 image: assets/images/thumbnail/default-img.png
