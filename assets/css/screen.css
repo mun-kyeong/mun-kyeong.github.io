@@ -698,6 +698,7 @@ h3 {
 }
 h4 {
   font-size: 1.25rem;
+  color: red;
 }
 h5 {
   font-size: 1.125rem;
@@ -1017,6 +1018,7 @@ hr {
 }
 
 /* Notion 스타일 테이블 */
+/* 
 table {
   width: 100%;
   border-collapse: separate;
@@ -1045,11 +1047,7 @@ td {
 
 tr:last-child td {
   border-bottom: none;
-}
-
-tr:hover {
-  background-color: #f9f9f9;
-}
+} */
 
 code {
   background-color: #f0f0f0;
