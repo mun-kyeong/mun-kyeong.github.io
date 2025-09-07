@@ -698,7 +698,6 @@ h3 {
 }
 h4 {
   font-size: 1.25rem;
-  color: red;
 }
 h5 {
   font-size: 1.125rem;
@@ -1048,11 +1047,3 @@ td {
 tr:last-child td {
   border-bottom: none;
 } */
-
-code {
-  background-color: #f0f0f0;
-  padding: 2px 5px;
-  border-radius: 4px;
-  font-size: 0.9em;
-  font-family: Consolas, "Courier New", monospace;
-}
