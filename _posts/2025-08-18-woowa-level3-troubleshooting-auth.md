@@ -54,8 +54,8 @@ image: assets/images/thumbnail/default-img.png
 
 문제의 원인은 **‘로그인 상태인지’**를 확인하고 라우팅을 처리하는 로직 때문이었다.
 
-<strong style="color: chocolate;">현재 로그인 상태</strong>라면 <p style="color: tan;">로그인/회원가입 페이지 접근 시 dashboard로 리다이렉션<strong style="color: tan;"></p>하고,<br/>
-<strong style="color: chocolate;"> 401 에러가 발생</strong>하면 <p style="color: tan;">다른 모든 페이지에서 로그인 페이지로 리다이렉션</p>하는 로직이 꼬인 것이다.
+<strong style="color: chocolate;">현재 로그인 상태</strong>라면 <span style="color: tan;">로그인/회원가입 페이지 접근 시 dashboard로 리다이렉션</span>하고, <br/>
+<strong style="color: chocolate;"> 401 에러가 발생</strong>하면 <span style="color: tan;">다른 모든 페이지에서 로그인 페이지로 리다이렉션</span>하는 로직이 꼬인 것이다.
 
 이 현상은 Router 설정에 문제가 있었는데, 코드를 살펴보면 다음과 같다.
 
@@ -114,9 +114,9 @@ const handleApiError = async (error: ApiError) => {
 
 6. React는 새로운 element로 인식
 
-- getAuthRedirectElement(<Login />) 실행 결과는 이전 렌더와 같은 <Login /> 모양이지만,
-  매번 **새로운 객체(ReactNode 인스턴스)**가 만들어짐
-- React Router는 이를 “다른 element”라고 보고, 다시 라우팅 매칭
+   - getAuthRedirectElement(<Login />) 실행 결과는 이전 렌더와 같은 <Login /> 모양이지만,
+     매번 **새로운 객체(ReactNode 인스턴스)**가 만들어짐
+   - React Router는 이를 “다른 element”라고 보고, 다시 라우팅 매칭
 
 7. Router 재매칭 → getAuthRedirectElement 재호출
    - Router는 또 /login 경로를 매칭
@@ -135,7 +135,7 @@ const handleApiError = async (error: ApiError) => {
 
 router.tsx가 로딩될 때 한 번만 실행되도록 태그로 감싸서 현재 페이지를 검증하는 방식으로 코드를 수정했다.
 
-```JavaScript
+```javascript
 
 // 기존 방식:
 element: getAuthRedirectElement(<Login />),
