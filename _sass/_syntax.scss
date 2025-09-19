@@ -1,19 +1,18 @@
-.highlight table td {
-  padding: 5px;
-}
-.highlight table pre {
-  margin: 0;
-}
+/* 코드 블록 전체 */
 .highlight,
 .highlight .w {
-  color: #d8d8d8;
-  background-color: #181818;
+  color: #c5c8c6; /* 기본 텍스트 색 (연한 회색) */
+  background-color: #1e1e1e; /* 다크 배경 */
   border-radius: 5px;
 }
+
+/* 에러 */
 .highlight .err {
-  color: #181818;
-  background-color: #ab4642;
+  color: #1e1e1e;
+  background-color: #f44747;
 }
+
+/* 주석 */
 .highlight .c,
 .highlight .ch,
 .highlight .cd,
@@ -21,59 +20,24 @@
 .highlight .cpf,
 .highlight .c1,
 .highlight .cs {
-  color: #585858;
+  color: #6a9955; /* VSCode 스타일 초록 */
 }
-.highlight .cp {
-  color: #f7ca88;
-}
-.highlight .nt {
-  color: #f7ca88;
-}
-.highlight .o,
-.highlight .ow {
-  color: #d8d8d8;
-}
-.highlight .p,
-.highlight .pi {
-  color: #d8d8d8;
-}
-.highlight .gi {
-  color: #a1b56c;
-}
-.highlight .gd {
-  color: #ab4642;
-}
-.highlight .gh {
-  color: #7cafc2;
-  background-color: #181818;
-  font-weight: bold;
-}
-.highlight .ge {
-  font-style: italic;
-}
-.highlight .ges {
-  font-weight: bold;
-  font-style: italic;
-}
-.highlight .gs {
-  font-weight: bold;
-}
+
+/* 키워드 */
 .highlight .k,
 .highlight .kn,
 .highlight .kp,
 .highlight .kr,
 .highlight .kv {
-  color: #ba8baf;
+  color: #c586c0; /* 보라 */
 }
-.highlight .kc {
-  color: #dc9656;
-}
-.highlight .kt {
-  color: #dc9656;
-}
+.highlight .kc,
+.highlight .kt,
 .highlight .kd {
-  color: #dc9656;
+  color: #569cd6; /* 타입/정의 → 블루 */
 }
+
+/* 문자열 */
 .highlight .s,
 .highlight .sb,
 .highlight .sc,
@@ -83,32 +47,10 @@
 .highlight .sh,
 .highlight .sx,
 .highlight .s1 {
-  color: #a1b56c;
+  color: #ce9178; /* 오렌지 */
 }
-.highlight .sa {
-  color: #ba8baf;
-}
-.highlight .sr {
-  color: #86c1b9;
-}
-.highlight .si {
-  color: #a16946;
-}
-.highlight .se {
-  color: #a16946;
-}
-.highlight .nn {
-  color: #f7ca88;
-}
-.highlight .nc {
-  color: #f7ca88;
-}
-.highlight .no {
-  color: #f7ca88;
-}
-.highlight .na {
-  color: #7cafc2;
-}
+
+/* 숫자 */
 .highlight .m,
 .highlight .mb,
 .highlight .mf,
@@ -117,8 +59,39 @@
 .highlight .il,
 .highlight .mo,
 .highlight .mx {
-  color: #a1b56c;
+  color: #b5cea8; /* 연두 */
 }
-.highlight .ss {
-  color: #a1b56c;
+
+/* 함수 / 메서드 이름 */
+.highlight .nf,
+.highlight .na {
+  color: #dcdcaa; /* 노란색 */
+}
+
+/* 클래스 / 인터페이스 이름 */
+.highlight .nc,
+.highlight .nn,
+.highlight .no {
+  color: #4ec9b0; /* 청록 */
+}
+
+/* 속성 */
+.highlight .na {
+  color: #9cdcfe; /* 하늘색 */
+}
+
+/* 연산자 / 구두점 */
+.highlight .o,
+.highlight .ow,
+.highlight .p,
+.highlight .pi {
+  color: #d4d4d4; /* 회색 */
+}
+
+/* 강조 */
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .ge {
+  font-style: italic;
 }
