@@ -1,14 +1,15 @@
 /* 코드 블록 전체 */
 .highlight,
 .highlight .w {
-  color: #c5c8c6; /* 기본 텍스트 색 (연한 회색) */
-  background-color: #1e1e1e; /* 다크 배경 */
+  color: #d4d7d6; /* 기본 텍스트 */
+  background-color: #151718; /* Seti 어두운 배경 */
   border-radius: 5px;
+  font-family: "Fira Code", "Menlo", "Consolas", monospace;
 }
 
 /* 에러 */
 .highlight .err {
-  color: #1e1e1e;
+  color: #151718;
   background-color: #f44747;
 }
 
@@ -20,7 +21,8 @@
 .highlight .cpf,
 .highlight .c1,
 .highlight .cs {
-  color: #6a9955; /* VSCode 스타일 초록 */
+  color: #6a9955; /* 연녹색 */
+  font-style: italic;
 }
 
 /* 키워드 */
@@ -34,7 +36,7 @@
 .highlight .kc,
 .highlight .kt,
 .highlight .kd {
-  color: #569cd6; /* 타입/정의 → 블루 */
+  color: #569cd6; /* 파랑 (타입/정의) */
 }
 
 /* 문자열 */
@@ -47,7 +49,7 @@
 .highlight .sh,
 .highlight .sx,
 .highlight .s1 {
-  color: #ce9178; /* 오렌지 */
+  color: #ce9178; /* 주황 */
 }
 
 /* 숫자 */
@@ -64,10 +66,10 @@
 
 /* 함수 / 메서드 이름 */
 .highlight .nf {
-  color: #dcdcaa; /* 노란색 */
+  color: #dcdcaa; /* 노랑 */
 }
 
-/* 속성/네임 관련 (빠진 부분 보강) */
+/* 속성 / 변수 */
 .highlight .na,
 .highlight .nb,
 .highlight .bp,
@@ -92,7 +94,7 @@
 .highlight .ow,
 .highlight .p,
 .highlight .pi {
-  color: #d4d4d4; /* 회색 */
+  color: #d4d4d4; /* 연한 회색 */
 }
 
 /* 강조 */
