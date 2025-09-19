@@ -63,21 +63,28 @@
 }
 
 /* 함수 / 메서드 이름 */
-.highlight .nf,
-.highlight .na {
+.highlight .nf {
   color: #dcdcaa; /* 노란색 */
 }
 
-/* 클래스 / 인터페이스 이름 */
-.highlight .nc,
-.highlight .nn,
-.highlight .no {
-  color: #4ec9b0; /* 청록 */
+/* 속성/네임 관련 (빠진 부분 보강) */
+.highlight .na,
+.highlight .nb,
+.highlight .bp,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+  color: #9cdcfe; /* 하늘색 */
 }
 
-/* 속성 */
-.highlight .na {
-  color: #9cdcfe; /* 하늘색 */
+/* 클래스 / 인터페이스 / 네임스페이스 */
+.highlight .nc,
+.highlight .nn,
+.highlight .no,
+.highlight .nl,
+.highlight .nx,
+.highlight .nt {
+  color: #4ec9b0; /* 청록 */
 }
 
 /* 연산자 / 구두점 */
