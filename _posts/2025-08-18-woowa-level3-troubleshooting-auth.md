@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] level-3 / 401 권한 리다이렉트 리렌더링 이슈"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-level3-401.png
 ---
 
 > 요약 <br/>

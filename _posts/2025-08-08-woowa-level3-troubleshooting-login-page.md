@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] level-3 / 로그인 페이지 제작기"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-level3-form.png
 ---
 
 > 요약 <br/>

@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] level-4 / 타입스크립트, 이렇게 쓰면 안돼요~"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-level4-return-type.png
 ---
 
 > 요약 <br/>
@@ -125,7 +125,7 @@ queryFn이 실행은 되고 있는건지, myFeedback이라는 값에 무슨 값�
 
 > 디버깅 하는 과정 및 방법은 아래 글을 참고하면 좋을 것 같다!
 >
-> [![디버깅 블로그 썸네일](/assets/images/thumbnail/default-img.png)](https://mun-kyeong.github.io/woowa-level4-debuging/)
+> [![디버깅 블로그 썸네일](/assets/images/thumbnail/woowa-level4-debugger.png)](https://mun-kyeong.github.io/woowa-level4-debuging/)
 
 디버깅을 통해 알게 된 점은, myFeedbacks의 값이 예상했던 대로 Object 형태로 저장되고 있던 점이다.
 

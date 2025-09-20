@@ -3,7 +3,7 @@ layout: post
 title: "코딩 테스트 알고리즘 이론 정리"
 author: kangoll
 categories: [study]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-level4-algorithm.png
 ---
 
 > 요약 <br/>
