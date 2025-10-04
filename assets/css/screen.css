@@ -1018,3 +1018,7 @@ hr {
     max-width: 85%;
   }
 }
+
+ul ul {
+  list-style-type: circle;
+}
