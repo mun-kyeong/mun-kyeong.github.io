@@ -27,6 +27,11 @@ image: assets/images/thumbnail/default-img.png
   - [✅ Sessions](#-sessions)
   - [✅ Token](#-token)
     - [JWT (JSON Web Token)](#jwt-json-web-token)
+- [1015 - **Browser Storage**](#1015---browser-storage)
+  - [✅ Cookies](#-cookies)
+  - [✅ Local Storage](#-local-storage)
+  - [✅ Session Storage](#-session-storage)
+  - [✅ IndexedDB \& Cache Storage](#-indexeddb--cache-storage)
 
 <br/>
 
@@ -136,7 +141,7 @@ Requires session storage on the server
 > <div style="color: darkseagreen;"> hijacking : 납치하다, 강탈하다</div>
 
 <br/>
-
+****
 ### ✅ Token
 
 ---
@@ -173,3 +178,74 @@ can block forgery through Signature verification<br/>
 🔝 [목차](#목차)로 돌아가기
 
 <br/><br/>
+
+## 1015 - **Browser Storage**
+
+---
+
+Last time, we talked about cookies, sessions, and tokens (**that manage status/authentication with servers.)** <br/>
+In this session, we will present about browser storage. <br/>
+Browser storage is a method of storing directly in a client (browser).
+
+> <div style="color: darkseagreen;"> storing : 저장 (n)  &nbsp; / &nbsp;  directly : 직접적으로(n)</div>
+
+<br/>
+
+### ✅ Cookies
+
+---
+
+Oldest method used by server/client together
+
+- Capacity: ~4KB
+- Mainly used for session maintenance, ad tracking
+- But, Security issues (XSS, CSRF)
+
+  - **XSS : (Cross-site script)** : vulnerability where an attacker's embedded script runs in a user's browser.
+  - **CSRF : (Content Security Policy)** : attack that exploits the authentication of a logged-in user (to execute an unwanted state change request.)
+
+> <div style="color: darkseagreen;"> Oldest : 가장 오래된 &nbsp; / &nbsp; Mainly : 주로 &nbsp; / &nbsp; Vulnerability : 취약</div>
+> <div style="color: darkseagreen;"> embedded : 끼워 넣어지다 &nbsp; / &nbsp; exploits : 이용하다</div>
+
+<br/>
+
+### ✅ Local Storage
+
+---
+
+- Domain units, persistent storage (remains if not cleared)
+- Capacity: 5-10 MB
+- can only store string
+  - ex) Set dark mode, maintain language selection
+
+> <div style="color: darkseagreen;"> persistent : 영구적인 &nbsp; / &nbsp; exploits : 이용하다 &nbsp; / &nbsp; abstract : 추상적인 </div>
+
+<br/>
+
+### ✅ Session Storage
+
+---
+
+- Similar to Local Storage, but per tab
+- Disappear when tab is closer
+  - If you close the tab during payment, it will fly
+
+<br/>
+
+### ✅ IndexedDB & Cache Storage
+
+---
+
+**IndexedDB**
+
+- Large Data Storage (Hundreds of MB or more)
+- Structured data, transaction support
+- Asynchronous Processing
+  - Gmail Offline Mode
+
+**Cache Storage**
+
+- Save network request/response objects
+- Can provide resources offline
+
+🔝 [목차](#목차)로 돌아가기
