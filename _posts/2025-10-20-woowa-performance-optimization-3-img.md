@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[우테코] level-4 / 성능 최적화 : 필요한 것만 요청하기"
+title: "[우테코] Lv.4 / 성능 최적화 : 이미지 요청 크기 줄이기"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
 image: assets/images/thumbnail/default-img.png
@@ -16,7 +16,7 @@ image: assets/images/thumbnail/default-img.png
 
 ## 목차
 
-- [⛳️ 로딩 개선을 위한 핵심 전략 - Part 1. 요청 크기 줄이기](#️-로딩-개선을-위한-핵심-전략---part-1-요청-크기-줄이기)
+- [⛳️ 로딩 성능 개선 - Part 1. 요청 크기 줄이기](#️-로딩-성능-개선---part-1-요청-크기-줄이기)
   - [1-2. 이미지 크기 줄이기](#1-2-이미지-크기-줄이기)
     - [**✅ 이미지 해상도가 화면에 보여야 하는 사이즈보다 큰 경우**](#-이미지-해상도가-화면에-보여야-하는-사이즈보다-큰-경우)
     - [**✅ 해상도를 맞췄음에도 여전히 용량이 큰 경우**](#-해상도를-맞췄음에도-여전히-용량이-큰-경우)
@@ -26,7 +26,7 @@ image: assets/images/thumbnail/default-img.png
 <br/>
 <br/>
 
-# ⛳️ 로딩 개선을 위한 핵심 전략 - Part 1. 요청 크기 줄이기
+# ⛳️ 로딩 성능 개선 - Part 1. 요청 크기 줄이기
 
 ## 1-2. 이미지 크기 줄이기
 

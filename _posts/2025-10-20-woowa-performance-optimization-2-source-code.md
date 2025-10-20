@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[우테코] level-4 / 성능 최적화 : 소스코드(.js) 줄이기"
+title: "[우테코] Lv.4 / 성능 최적화 : 소스코드(.js) 줄이기"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
 image: assets/images/thumbnail/default-img.png
@@ -14,7 +14,7 @@ image: assets/images/thumbnail/default-img.png
 
 ## 목차
 
-- [⛳️ 로딩 개선을 위한 핵심 전략 - Part 1. 요청 크기 줄이기](#️-로딩-개선을-위한-핵심-전략---part-1-요청-크기-줄이기)
+- [⛳️ 로딩 성능 개선 - Part 1. 요청 크기 줄이기](#️-로딩-성능-개선---part-1-요청-크기-줄이기)
   - [1-1. 소스코드(.js) 줄이기](#1-1-소스코드js-줄이기)
     - [**✅ minify \& uglify**](#-minify--uglify)
       - [**✔️ 최소화(minify)**](#️-최소화minify)
@@ -26,9 +26,7 @@ image: assets/images/thumbnail/default-img.png
 <br/>
 <br/>
 
-# ⛳️ 로딩 개선을 위한 핵심 전략 - Part 1. 요청 크기 줄이기
-
----
+# ⛳️ 로딩 성능 개선 - Part 1. 요청 크기 줄이기
 
 ![part1](/assets/images/blog/2025-10-05-woowa-performance-optimization-1/part1.png)
 
@@ -104,8 +102,6 @@ Gzip은 웹에서 가장 오래되고 널리 쓰이는 압축 방식으로, 파�
 `gzip`과 `br(Brotli)` 타입으로 확인할 수 있다.
 
 ![brotli](/assets/images/blog/2025-10-05-woowa-performance-optimization-1/brotli.png)
-
-<br/>
 
 > **요약**
 >
