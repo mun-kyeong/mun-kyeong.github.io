@@ -259,3 +259,10 @@ Google Fonts, CDN 서버, 외부 API 서버 등 현재 페이지에서 곧 사�
 
 - **defer** : DOM이 완성된 후에 실행하므로 DOM 수정에서 자유롭다
 - **async** : DOM을 수정하지 않는 독립적인 스크립트라는 전제 하에 사용된다.
+
+> ### 참고자료
+>
+> https://web.dev/articles/preload-critical-assets (preload)
+> https://web.dev/articles/link-prefetch (prefetch)
+> https://www.keycdn.com/blog/resource-hints (prefetch)
+> https://web.dev/articles/preconnect-and-dns-prefetch (preconnect)

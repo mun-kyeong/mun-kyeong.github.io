@@ -272,3 +272,8 @@ Dynamic import의 경우엔 `React.lazy`와는 별개로, 프로그래머가 직
 하지만 `React.lazy`는 렌더링 시점 기반이므로, ‘렌더링이 일어나야 import’가 된다. <br/>
 즉, **이벤트 기반 사전 로딩(preloading)**, 사용자 클릭 전 미리 로드 같은건 어렵다. <br/>
 아래처럼 ‘미리 로드’전략을 쓰려면 `React.lazy`만으로는 부족하고, 직접 `import()` 호출이 필요하다.
+
+> ### 참고자료
+>
+> https://www.patterns.dev/vanilla/tree-shaking/ (Tree-shacking)
+> https://www.patterns.dev/vanilla/import-on-interaction/ (Import On Interaction)
