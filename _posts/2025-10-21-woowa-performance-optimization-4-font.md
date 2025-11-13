@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[우테코] Lv.4 / 성능 최적화 : 이미지 요청 크기 줄이기"
+title: "[우테코] Lv.4 / 성능 최적화 : 폰트 요청 크기 줄이기"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
 image: assets/images/thumbnail/default-img.png
@@ -34,6 +34,8 @@ image: assets/images/thumbnail/default-img.png
 
 이 주제에 대해서는 수이가 발표한 테코톡 영상을 참고하면 더욱 쉽게 이해할 수 있다.<br/>
 [수이영상](수이영상)
+
+<iframe width="392" height="220" src="https://www.youtube.com/embed?v=3h5gD7lJqs0" frameborder="0" allowfullscreen></iframe>
 
 <br/>
 웹 폰트 최적화를 위해 시도해볼 만한 주요 방법들을 정리했다.

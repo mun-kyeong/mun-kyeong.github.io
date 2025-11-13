@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] Lv.4 / 성능 최적화 : 이미지 요청 크기 줄이기"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-performance-optimization-3-img.png
 ---
 
 > 요약 <br/>

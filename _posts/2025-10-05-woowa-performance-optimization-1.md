@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] level-4 / 성능 최적화 (로딩성능 / 렌더링 성능)"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-performance-optimization-1.png
 ---
 
 > 요약 <br/>

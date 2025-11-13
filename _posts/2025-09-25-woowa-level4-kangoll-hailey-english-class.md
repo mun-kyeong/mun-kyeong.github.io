@@ -32,6 +32,10 @@ image: assets/images/thumbnail/default-img.png
   - [✅ Local Storage](#-local-storage)
   - [✅ Session Storage](#-session-storage)
   - [✅ IndexedDB \& Cache Storage](#-indexeddb--cache-storage)
+- [1015 - **Symmetric key ciphers and asymmetric key ciphers**](#1015---symmetric-key-ciphers-and-asymmetric-key-ciphers)
+  - [✅ Introduction - Why We Need Encryption](#-introduction---why-we-need-encryption)
+  - [✅ Symmetric Encryption](#-symmetric-encryption)
+  - [✅ Asymmetric Encryption](#-asymmetric-encryption)
 
 <br/>
 
@@ -141,7 +145,7 @@ Requires session storage on the server
 > <div style="color: darkseagreen;"> hijacking : 납치하다, 강탈하다</div>
 
 <br/>
-****
+
 ### ✅ Token
 
 ---
@@ -249,3 +253,54 @@ Oldest method used by server/client together
 - Can provide resources offline
 
 🔝 [목차](#목차)로 돌아가기
+
+<br/>
+
+## 1015 - **Symmetric key ciphers and asymmetric key ciphers**
+
+---
+
+### ✅ Introduction - Why We Need Encryption
+
+---
+
+**Encryption** is one of the most essential technologies to protect our data
+<br>
+when we send information over the internet - like passwords, messages - it passes through many servers and networks. <br/>
+Without encryption, anyone could intercept and read that data.<br/>
+To avoid this risk, data is encrypted and transmitted.
+
+In modern networks, there are two main types of encryption: <br/>
+**symmetric and asymmetric.**
+
+> <div style="color: darkseagreen;"> over : ~를 통해서 &nbsp; / &nbsp; pass (through) : 통과하다,지나가다 </div>
+
+<Br/>
+
+### ✅ Symmetric Encryption
+
+---
+
+The same key is used for both encryption and decryption.<br/>
+In symmetric encryption, the sender and receiver share one secret key.<br/>
+The sender uses this key to encrypt the data, and the receiver uses the same key to decrypt it.<br/>
+Therefore, the sender and receiver must share the same key in advance
+
+**feature**
+
+Because it uses only one key, symmetric encryption is fast and efficient, But key transfer is difficult<br/>
+If the key is leaked, all the data becomes dangerous.
+
+> <div style="color: darkseagreen;"> used for both + N : 둘 다에 사용되다 &nbsp; / &nbsp; in advance : 사전에 &nbsp; / &nbsp; leaked : 유출되다</div>
+
+<br/>
+
+### ✅ Asymmetric Encryption
+
+---
+
+Uses a pair of keys — a public key and a private key. <br/>
+- The public key can be shared with anyone
+
+
+> <div style="color: darkseagreen;"> used for both + N : 둘 다에 사용되다 &nbsp; / &nbsp; </div>

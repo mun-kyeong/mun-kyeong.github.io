@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] level-4 / React-Query와의 인연 (1)"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-level4-react-query1.png
 ---
 
 > 요약 <br/>

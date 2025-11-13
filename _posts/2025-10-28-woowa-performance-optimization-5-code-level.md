@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] Lv.4 / 성능 최적화 : 네트워크 요청 우선순위를 조절하자"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-performance-optimization-5-code-level.png
 ---
 
 > 요약 <br/>

@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] Lv.4 / 성능 최적화 : 소스코드(.js) 줄이기"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-performance-optimization-2-source-code.png
 ---
 
 > 요약 <br/>
