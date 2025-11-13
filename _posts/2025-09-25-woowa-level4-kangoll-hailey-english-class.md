@@ -3,7 +3,7 @@ layout: post
 title: "[우테코] level-4 / kangoll & hailey's English class"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
-image: assets/images/thumbnail/default-img.png
+image: assets/images/thumbnail/woowa-level4-kangoll-hailey-english-class.png
 ---
 
 > 요약 <br/>
@@ -300,7 +300,7 @@ If the key is leaked, all the data becomes dangerous.
 ---
 
 Uses a pair of keys — a public key and a private key. <br/>
-- The public key can be shared with anyone
 
+- The public key can be shared with anyone
 
 > <div style="color: darkseagreen;"> used for both + N : 둘 다에 사용되다 &nbsp; / &nbsp; </div>
