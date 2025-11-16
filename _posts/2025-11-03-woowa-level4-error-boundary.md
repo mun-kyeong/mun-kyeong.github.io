@@ -34,6 +34,7 @@ image: assets/images/thumbnail/default-img.png
   - [4-3. QueryCache와 Local ErrorBoundary 충돌 해결](#4-3-querycache와-local-errorboundary-충돌-해결)
 - [5.마무리](#5마무리)
   - [5-1. 전체 코드](#5-1-전체-코드)
+  - [참고 자료](#참고-자료)
 
 <br/>
 <br/>
@@ -571,3 +572,9 @@ UI 안정성과 사용자 경험을 한층 강화할 수 있었다.
     </QueryClientBoundary>
   </ErrorProvider>
   ```
+
+## 참고 자료
+
+- https://www.youtube.com/watch?v=012IPbMX_y4
+- https://www.youtube.com/watch?v=RvsMwyysUHI
+- https://happysisyphe.tistory.com/52
