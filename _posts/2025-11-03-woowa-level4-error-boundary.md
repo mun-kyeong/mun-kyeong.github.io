@@ -45,8 +45,6 @@ image: assets/images/thumbnail/default-img.png
 >
 > [![디버깅 블로그 썸네일](/assets/images/thumbnail/woowa-level4-return-type.png){: width="300" .d-block }](https://mun-kyeong.github.io/woowa-level4-troubleshooting-return-type/)
 
----
-
 # 1. 상황(Situation) — 왜 에러 바운더리가 필요했을까?
 
 ---
@@ -56,11 +54,10 @@ image: assets/images/thumbnail/default-img.png
 
 이 문제를 되짚어보니, 예측 불가능한 에러를 전역적으로 안전하게 처리할 장치가 부족했다는 점, 즉 **에러 바운더리의 부재**가 핵심 원인이었다.
 
-![dashboard-crash](/assets/images/blog/2025-11-03-woowa-level4-error-boundary/dashboard-crash.png)
+![dashboard-crash](/assets/images/blog/2025-11-03-woowa-level4-error-boundary/dashboard-crash.png){: width="500" .mx-auto .d-block }
 
-이 경험을 통해 다음과 같은 목표를 세웠다.
-
-> 예상치 못한 에러가 발생해도 사용자에게 친화적인 UI와 안내를 제공하자!
+이 경험을 통해 다음과 같은 목표를 세웠다. <br/>
+**예상치 못한 에러가 발생해도 사용자에게 친화적인 UI와 안내를 제공하자!**
 
 <br/>
 <br/>
@@ -110,24 +107,16 @@ React 애플리케이션에서 **에러 바운더리(Error Boundary)**를 검색
 
 에러 바운더리를 이해하기 위해서 첫번째로 접근해본 방식은 “**에러바운더리는 왜 class로 이루어져있을까?**” 라는 질문이였다.
 
-간단히 정리해 보자면, React 내부의 에러 복구 로직이 `componentDidCatch`, `getDerivedStateFromError` 같은 **클래스 전용 라이프사이클 메서드**를 기반으로 동작하기 때문이다.
-
+간단히 정리해 보자면, React 내부의 에러 복구 로직이 `componentDidCatch`, `getDerivedStateFromError` 같은 **클래스 전용 라이프사이클 메서드**를 기반으로 동작하기 때문이다.<br/>
 즉, React 자체가 **클래스 인스턴스**를 전제로 에러 경계를 찾고 복구 지점을 제공하도록 설계되었기 때문에,<br/>
 에러 바운더리는 오직 클래스형 컴포넌트로만 구현할 수 있었다.
 
-<details>
-  <summary>💡 조금 더 상세히 이해하고싶다면</summary>
-  <div>
-
-React의 렌더링은 **Fiber 루프 내부에서 스케줄링되는 과정**이며, <br/>
-렌더링 중 에러가 발생하면 React는 트리를 거슬러 올라가며
-`componentDidCatch`나 `getDerivedStateFromError` 메서드를 가진 에러 바운더리를 찾는다.
-
-이 메서드들은 **클래스 인스턴스(`this`)를 전제로 한 라이프사이클 메서드이기** 때문에,<br/>
-React는 **오직 클래스형 컴포넌트만을 에러 복구 지점으로 인식할 수 있는 것이다.**
-
-</div>
-</details>
+> **조금 더 상세히 이해하고싶다면 ⬇️** <br/>
+> React의 렌더링은 **Fiber 루프 내부에서 스케줄링되는 과정**이며, <br/>
+> 렌더링 중 에러가 발생하면 React는 트리를 거슬러 올라가며 `componentDidCatch`나 `getDerivedStateFromError` 메서드를 가진 에러 바운더리를 찾는다.
+>
+> 이 메서드들은 **클래스 인스턴스(`this`)를 전제로 한 라이프사이클 메서드이기** 때문에,<br/>
+> React는 **오직 클래스형 컴포넌트만을 에러 복구 지점으로 인식할 수 있는 것이다.**
 
 따라서 우리는 이 ErrorBoundary를 사용해서 **렌더링 중 발생할 수 있는 에러**를 잡고,<br/>
 사용자 친화적인 인터페이스를 제공하고자 한다.
@@ -155,8 +144,7 @@ React는 **오직 클래스형 컴포넌트만을 에러 복구 지점으로 인
   - Local 에러 바운더리 : 나머지 앱 흐름은 유지하면서 특정 컴포넌트에서 실패 지점만 격리 및 복구 한다.
 
 > 에러 바운더리의 경우, 팀원인 `우디`와 함께 진행했고, <br/>
-> 나는 Toast ErrorBoundary를, 우디는 Fallback ErrorBoundary를 맡아서 진행했다.
->
+> 나는 Toast ErrorBoundary를, 우디는 Fallback ErrorBoundary를 맡아서 진행했다. <br/>
 > 피드줍줍은 `Tanstack-query`의 `mutation`을 사용해서 데이터들을 다루고 있으므로, <br/>
 > 이를 활용한 Tost 에러 바운더리를 만들어 볼 예정이다.
 
@@ -165,11 +153,8 @@ React는 **오직 클래스형 컴포넌트만을 에러 복구 지점으로 인
 
 # 3. 활동 (Action) — Toast 기반 ErrorBoundary 구현
 
-- 전체 구조
-
+전체 구조
 ![diagram](/assets/images/blog/2025-11-03-woowa-level4-error-boundary/diagram.png)
-
----
 
 ## 3-1. 기존 코드의 문제점
 
@@ -284,7 +269,14 @@ TanStack Query 내부(Promise 기반)에서 발생한 에러를 **React 렌더�
 먼저 `ErrorProvider`가 에러를 전역 상태로 저장하고,
 `ErrorCatcher`가 이 상태 변화를 감지하여 **React가 이해할 수 있는 방식으로 오류를 다시 전파**한다.
 
-아래 코드는 `ErrorCatcher`의 핵심 부분이다.
+**1. ErrorProvider — 비동기 에러를 React 상태로 끌어오기**
+
+- `QueryCache/MutationCache`에서 발생한 에러를 ErrorProvider에서 `appError`라는 전역 상태로 저장하면 **“React의 상태 변경 → 컴포넌트 리렌더링”** 흐름을 타게 된다.<br/> 즉, 비동기 에러를 React 트리 내부로 가져오는 브릿지 역할을 수행하게 되는 것이다.
+
+**2. ErrorCatcher — 상태 변화 감지 후 React 방식으로 재전파**
+
+- ErrorProvider에 저장된 `appError` 값이 변경되면 ErrorCatcher가 리렌더링된다.
+- 이때 다음과 같은 분기 처리를 수행하게 된다.
 
 ```tsx
 if (appError instanceof ApiError) {
@@ -294,18 +286,19 @@ if (appError instanceof ApiError) {
 }
 ```
 
-여기서 이루어지는 분기 처리는 다음과 같다.
+이 분기문에서는 Mutation 오류와 Query 오류를 서로 다른 방식으로 처리 하여 <br/>
+사용자 경험과 React의 에러 처리 구조를 모두 만족시키는 역할을 한다.
 
-1. **Mutation 오류 → Toast로 처리**
+- **Mutation 오류 → Toast로 처리**
 
-Mutation(POST/PUT/DELETE)은 비동기 액션이며, <br/>
-ErrorBoundary가 원천적으로 포착할 수 없는 영역에서 발생한다. <br/>
-따라서 `ApiError`로 분류된 경우에는 <br/>
+Mutation(POST/PUT/DELETE)은 비동기 액션이며,
+ErrorBoundary가 포착할 수 없는 영역에서 발생한다. <br/>
+따라서 `ApiError`로 분류된 경우에는
 UI를 깨지 않고 Toast 형태로 가볍게 사용자에게 알린다.
 
-2. **Query 오류 → ErrorBoundary로 재-던짐**
+- **Query 오류 → ErrorBoundary로 재-던짐**
 
-Query(GET)는 렌더링 중 실행되며,<br/>
+Query(GET)는 렌더링 중 실행되며,
 React Query에서 `throwOnError: true`를 통해<br/>
 React 렌더링 단계로 에러를 전달할 수 있다.
 
@@ -333,13 +326,15 @@ const { mutate } = useMutation({
 
 # 4. 결과(Result) — 성공적으로 동작하는 Toast ErrorBoundary
 
+<br/>
+
 ## 4-1. 토스트 기반 mutation 에러 처리
 
-- before : 모달창으로 보이던 에러 메시지
-  ![before](/assets/images/blog/2025-11-03-woowa-level4-error-boundary/before.gif)
+before : 모달창으로 보이던 에러 메시지
+![before](/assets/images/blog/2025-11-03-woowa-level4-error-boundary/before.gif){: width="400" .mx-auto .d-block }
 
-- after : 토스트 형식으로 변경
-  ![after](/assets/images/blog/2025-11-03-woowa-level4-error-boundary/after.gif)
+after : 토스트 형식으로 변경
+![after](/assets/images/blog/2025-11-03-woowa-level4-error-boundary/after.gif){: width="400" .mx-auto .d-block }
 
 기존의 복잡했던 onError 로직이 사라지고,
 모든 mutation 에러는 전역 ErrorCatcher를 통해 Toast로 처리된다.
