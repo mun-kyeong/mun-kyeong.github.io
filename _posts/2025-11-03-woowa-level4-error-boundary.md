@@ -43,7 +43,7 @@ image: assets/images/thumbnail/default-img.png
 
 > 이전에 작성했던 '대시보드 UI 깨짐 현상 해결'과 연결되는 부분이다 <br/>
 >
-> [![디버깅 블로그 썸네일](/assets/images/thumbnail/woowa-level4-return-type.png)](https://mun-kyeong.github.io/woowa-level4-troubleshooting-return-type/){: width="400" .mx-auto .d-block }
+> [![디버깅 블로그 썸네일](/assets/images/thumbnail/woowa-level4-return-type.png){: width="300" .d-block }](https://mun-kyeong.github.io/woowa-level4-troubleshooting-return-type/)
 
 ---
 

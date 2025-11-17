@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[우테코] level-4 / 타입스크립트, 이렇게 쓰면 안돼요~"
+title: "[우테코] level-4 / 크롬 디버거로 진단한 타입 단언 오류"
 author: kangoll
 categories: [woowaCourse, tech-reflection]
 image: assets/images/thumbnail/woowa-level4-return-type.png
