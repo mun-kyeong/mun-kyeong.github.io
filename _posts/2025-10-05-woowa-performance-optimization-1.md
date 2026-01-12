@@ -4,6 +4,7 @@ title: "[우테코] level-4 / 성능 최적화 (로딩성능 / 렌더링 성능)
 author: kangoll
 categories: [woowaCourse, tech-reflection]
 image: assets/images/thumbnail/woowa-performance-optimization-1.png
+featured: true
 ---
 
 > 요약 <br/>
@@ -55,7 +56,12 @@ image: assets/images/thumbnail/woowa-performance-optimization-1.png
 # Part 1. 로딩 성능 개선
 
 1. 요청 크기 줄이기
+   - [텍스트 컨텐츠 & 소스코드](https://mun-kyeong.github.io/woowa-performance-optimization-2-source-code/)
+   - [이미지](https://mun-kyeong.github.io/woowa-performance-optimization-3-img/)
+   - [폰트](https://mun-kyeong.github.io/woowa-performance-optimization-4-font/)
 2. 필요한 것만 필요한 때에 요청하기
+   - [요청 수 줄이기](https://mun-kyeong.github.io/woowa-performance-optimization-5-code-level/)
+   - [요청 우선순위를 조정하기](https://mun-kyeong.github.io/woowa-performance-optimization-6-network-level/)
 3. 같은 건 매번 요청하지 않기
 
 <Br/><br/>

@@ -19,8 +19,8 @@ image: assets/images/thumbnail/woowa-performance-optimization-4-font.png
 - [⛳️ 로딩 성능 개선 - Part 1. 요청 크기 줄이기](#️-로딩-성능-개선---part-1-요청-크기-줄이기)
   - [1-3. 웹 폰트 파일 용량 줄이기](#1-3-웹-폰트-파일-용량-줄이기)
     - [**✅ 폰트 파일 용량 줄이기**](#-폰트-파일-용량-줄이기)
-      - [**✔️ WOFF 2.0 형식 폰트 사용**](#️-woff-20-형식-폰트-사용)
-      - [**✔️ 서브셋(Subset) 폰트 사용**](#️-서브셋subset-폰트-사용)
+        - [**✔️ WOFF 2.0 형식 폰트 사용**](#️-woff-20-형식-폰트-사용)
+        - [**✔️ 서브셋(Subset) 폰트 사용**](#️-서브셋subset-폰트-사용)
     - [**✅ 텍스트가 항상 보이게 하기**](#-텍스트가-항상-보이게-하기)
 
 <br/>
@@ -33,9 +33,8 @@ image: assets/images/thumbnail/woowa-performance-optimization-4-font.png
 ---
 
 이 주제에 대해서는 수이가 발표한 테코톡 영상을 참고하면 더욱 쉽게 이해할 수 있다.<br/>
-[수이영상](수이영상)
 
-<iframe width="392" height="220" src="https://www.youtube.com/embed?v=3h5gD7lJqs0" frameborder="0" allowfullscreen></iframe>
+<iframe width="392" height="220" src="https://www.youtube.com/embed/3h5gD7lJqs0" frameborder="0" allowfullscreen></iframe>
 
 <br/>
 웹 폰트 최적화를 위해 시도해볼 만한 주요 방법들을 정리했다.

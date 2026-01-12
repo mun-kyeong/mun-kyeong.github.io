@@ -4,7 +4,6 @@ title: "kangoll의 위키문서"
 author: kangoll
 categories: [wikipedia]
 image: assets/images/thumbnail/wikipedia.png
-featured: true
 ---
 
 > 요약 )
@@ -21,18 +20,18 @@ featured: true
 - [📚 목차](#-목차)
 - [JavaScript](#javascript)
 - [객체지향적인 코드를 작성하자](#객체지향적인-코드를-작성하자)
-  - [class를 사용하는 기준 (2025.03)](#class를-사용하는-기준-202503)
-  - [선언형 프로그래밍으로 작성하자. (2025.03)](#선언형-프로그래밍으로-작성하자-202503)
-  - [높은 응집도, 낮은 결합도 (2025.03)](#높은-응집도-낮은-결합도-202503)
+    - [class를 사용하는 기준 (2025.03)](#class를-사용하는-기준-202503)
+    - [선언형 프로그래밍으로 작성하자. (2025.03)](#선언형-프로그래밍으로-작성하자-202503)
+    - [높은 응집도, 낮은 결합도 (2025.03)](#높은-응집도-낮은-결합도-202503)
 - [React 사용시 주의점(기억하고 싶은 내용)](#react-사용시-주의점기억하고-싶은-내용)
-  - [setter를 노출시키기보다 handler로 감싸주기 (2025.06)](#setter를-노출시키기보다-handler로-감싸주기-202506)
+    - [setter를 노출시키기보다 handler로 감싸주기 (2025.06)](#setter를-노출시키기보다-handler로-감싸주기-202506)
 - [DOM 의 성능 최적화](#dom-의-성능-최적화)
-  - [DocumentFragment를 사용하자. (2025.03)](#documentfragment를-사용하자-202503)
+    - [DocumentFragment를 사용하자. (2025.03)](#documentfragment를-사용하자-202503)
 - [HTML, CSS](#html-css)
 - [자주 잊어버리는 문법들](#자주-잊어버리는-문법들)
-  - [\[html\] html 토글 태그 (2025.03)](#html-html-토글-태그-202503)
-  - [\[html\] addEventListner 대신 `<form>` 태그를 사용하자 (2025.03)](#html-addeventlistner-대신-form-태그를-사용하자-202503)
-  - [\[css\] `inset` 속성으로 css 속성을 간단히 줄 수 있다. (2025.03)](#css-inset-속성으로-css-속성을-간단히-줄-수-있다-202503)
+    - [\[html\] html 토글 태그 (2025.03)](#html-html-토글-태그-202503)
+    - [\[html\] addEventListner 대신 `<form>` 태그를 사용하자 (2025.03)](#html-addeventlistner-대신-form-태그를-사용하자-202503)
+    - [\[css\] `inset` 속성으로 css 속성을 간단히 줄 수 있다. (2025.03)](#css-inset-속성으로-css-속성을-간단히-줄-수-있다-202503)
 
 ---
 

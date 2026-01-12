@@ -17,11 +17,11 @@ image: assets/images/thumbnail/woowa-performance-optimization-2-source-code.png
 - [⛳️ 로딩 성능 개선 - Part 1. 요청 크기 줄이기](#️-로딩-성능-개선---part-1-요청-크기-줄이기)
   - [1-1. 소스코드(.js) 줄이기](#1-1-소스코드js-줄이기)
     - [**✅ minify \& uglify**](#-minify--uglify)
-      - [**✔️ 최소화(minify)**](#️-최소화minify)
-      - [**✔️ 난독화(uglify)**](#️-난독화uglify)
+        - [**✔️ 최소화(minify)**](#️-최소화minify)
+        - [**✔️ 난독화(uglify)**](#️-난독화uglify)
     - [**✅ gzip, brotli**](#-gzip-brotli)
-      - [**✔️ Gzip**](#️-gzip)
-      - [**✔️ Brotli**](#️-brotli)
+        - [**✔️ Gzip**](#️-gzip)
+        - [**✔️ Brotli**](#️-brotli)
 
 <br/>
 <br/>
