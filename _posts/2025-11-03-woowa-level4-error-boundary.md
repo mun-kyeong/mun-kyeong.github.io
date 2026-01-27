@@ -68,7 +68,7 @@ image: assets/images/thumbnail/woowa-level4-error-boundary.png
 
 에러 바운더리에 대해 간단한 정의를 짚고 넘어가보자면
 
-## 2-1. React에서의 에러 바운더리란?
+### 2-1. React에서의 에러 바운더리란?
 
 에러 바운더리는 자식 컴포넌트에서 발생한 렌더링 **오류를 자동으로 감지**하고, U**I가 완전히 깨지는 것을 방지**하며, **대신 Fallback UI**를 보여주는 컴포넌트다.
 
@@ -123,7 +123,7 @@ React 애플리케이션에서 **에러 바운더리(Error Boundary)**를 검색
 
 <br/>
 
-## 2-2. 두가지 에러 바운더리 (Tost 메시지, FallBack UI)
+### 2-2. 두가지 에러 바운더리 (Tost 메시지, FallBack UI)
 
 피드줍줍은 크게 두 종류의 에러를 처리해야 했다.
 
@@ -156,7 +156,7 @@ React 애플리케이션에서 **에러 바운더리(Error Boundary)**를 검색
 전체 구조
 ![diagram](/assets/images/blog/2025-11-03-woowa-level4-error-boundary/diagram.png)
 
-## 3-1. 기존 코드의 문제점
+### 3-1. 기존 코드의 문제점
 
 기존에는 모든 API 커스텀 훅마다 직접 handleApiError를 넣어야 했다.
 
@@ -177,7 +177,7 @@ onError: (error) => {
 
 <Br/>
 
-## 3-2. “Toast를 위한 ErrorBoundary”를 구상하기
+### 3-2. “Toast를 위한 ErrorBoundary”를 구상하기
 
 기존 ErrorBoundary는 Fallback UI에 최적화된 구조다.
 
@@ -225,7 +225,7 @@ children을 그대로 렌더링하면 무한 루프를 일으키기 때문이다
 
 <br/>
 
-## 3-3. QueryClientBoundary — TanStack Query의 에러를 전역에서 잡기
+### 3-3. QueryClientBoundary — TanStack Query의 에러를 전역에서 잡기
 
 TanStack Query의 에러 레벨은 3단계다.
 
@@ -253,7 +253,7 @@ mutationCache: new MutationCache({
 
 <br/>
 
-## 3-4. ErrorProvider & ErrorCatcher 도입
+### 3-4. ErrorProvider & ErrorCatcher 도입
 
 TanStack Query의 전역 캐시(`QueryCache`, `MutationCache`)는 React 렌더링 트리 밖에서 동작한다. <br/>
 그래서 이 위치에서 throw를 해도 React ErrorBoundary가 절대 잡지 못한다. <br/>
@@ -308,7 +308,7 @@ React 렌더링 단계로 에러를 전달할 수 있다.
 
 <br/>
 
-## 3-5. 구현 결과 — 선언적이고 깔끔한 에러 처리
+### 3-5. 구현 결과 — 선언적이고 깔끔한 에러 처리
 
 이제 개별 훅은 에러 처리 코드를 넣을 필요 없이
 오직 성공 로직만 작성하면 된다
@@ -328,7 +328,7 @@ const { mutate } = useMutation({
 
 <br/>
 
-## 4-1. 토스트 기반 mutation 에러 처리
+### 4-1. 토스트 기반 mutation 에러 처리
 
 before : 모달창으로 보이던 에러 메시지
 ![before](/assets/images/blog/2025-11-03-woowa-level4-error-boundary/before.gif){: width="400" .mx-auto .d-block }
@@ -400,7 +400,7 @@ export const ErrorCatcher = () => {
 
 <br/>
 
-## 4-2. mutateAsync 에서 uncaught 오류가 난 이유
+### 4-2. mutateAsync 에서 uncaught 오류가 난 이유
 
 아래 코드처럼 mutateAsync는 try-catch가 없으면 함수 호출부로 에러가 전파된다.
 
@@ -423,7 +423,7 @@ try {
 
 <br/>
 
-## 4-3. QueryCache와 Local ErrorBoundary 충돌 해결
+### 4-3. QueryCache와 Local ErrorBoundary 충돌 해결
 
 ```tsx
 new QueryClient({
@@ -474,7 +474,7 @@ UI 안정성과 사용자 경험을 한층 강화할 수 있었다.
 
 <br/>
 
-## 5-1. 전체 코드
+### 5-1. 전체 코드
 
 - `QueryClientBoundary`
 
@@ -508,7 +508,7 @@ UI 안정성과 사용자 경험을 한층 강화할 수 있었다.
               updateAppError(error);
             },
           }),
-        })
+        }),
     );
 
     return (
