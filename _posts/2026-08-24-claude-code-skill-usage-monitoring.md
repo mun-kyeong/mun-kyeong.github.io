@@ -95,15 +95,8 @@ image: assets/images/thumbnail/default-img.png
 
 시스템에 필요한 데이터는 목적에 맞게 핵심만 추렸습니다.
 
-| 데이터   | 수집 목적                             |
-| ----- | --------------------------------- |
-| 스킬 이름 | 실제 사용되는 스킬 파악                  |
-| 호출 횟수 | 사용 빈도 측정                |
-| 사용자   | 특정 팀원에게만 편중된 스킬인지 확인                   |
-| 월(기간)  | 시간에 따른 사용량 변화 추적                  |
-| 호출 방식 | 사용자가 직접 친 커맨드인지, 모델이 스스로 호출한 건지 구분 |
-| 인자 속성 | 스킬별 세부 입력 방식과 옵션 활용 패턴 분석             |
-| 스킬 목록 | 배포되어 있지만 사용량이 0인 스킬 식별                  |
+![skill_chart](/assets/images/blog/2026-08-24-claude-code-skill-usage-monitoring/skill_chart.png)
+
 
 여기서 호출 횟수뿐만 아니라 인자의 형태까지 눈여겨본 이유는, 같은 스킬이라도 팀원들이 어떤 맥락으로 쓰고 있는지 알고 싶었기 때문입니다.
 
@@ -128,13 +121,7 @@ image: assets/images/thumbnail/default-img.png
 이런 원문을 그대로 수집해 팀 공용 시트에 남기면 보안상 위험할 수밖에 없습니다.<br/>
 그래서 실제 값은 과감히 버리고, **어떤 형태의 인자가 들어왔는지만 남기도록 전처리**했습니다.
 
-| 실제 입력                             | 저장되는 값                 |
-| --------------------------------- | ---------------------- |
-| `/ship --draft`                   | `--draft`              |
-| `/ship commit`                    | `mode:commit`          |
-| `/senior-review src/app/page.tsx` | `arg:path`             |
-| `/senior-review HEAD~3..HEAD`     | `arg:range`            |
-| `/ship commit 먼저하고 {...}`         | `arg:text,mode:commit` |
+![parms-chart](/assets/images/blog/2026-08-24-claude-code-skill-usage-monitoring/parms-chart.png)
 
 플래그처럼 스킬에 미리 정의된 값은 그대로 남기고, 첫 번째 인자로 오는 짧은 소문자는 서브커맨드로 보아 `mode:`로 기록했습니다. 나머지 가변적인 값들은 실제 내용을 보지 않아도 흐름을 알 수 있도록 `path`, `range`, `word`, `text` 등으로 분류해 마스킹했습니다.
 
